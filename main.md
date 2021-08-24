@@ -43,3 +43,7 @@ notion is slow and it pisses me off.
 
 i want to export my notion blog to github. not sure how that would work.
 
+### chess in general
+
+
+
