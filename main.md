@@ -37,5 +37,9 @@ for pgn in PGNs:
 
 and then print the optimalmovelist
 
-this is supposed to be used on a console of course.
+### moving my notion blog to github
+
+notion is slow and it pisses me off.
+
+i want to export my notion blog to github. not sure how that would work.
 
