@@ -18,4 +18,24 @@ anyway what i want to do is to be able to create a piece of code that spits out 
 
 let's say i have an array of PGNs:
 
-PGNs =
+PGNs = ["1.Nf3 d5", "1.e4"]
+
+now i need a loop to iterate through each item in that list
+
+the output is a list that looks like
+
+optimalMoveList = ["1.Nf3 d5 2.d4", "1.e5 g6"]
+
+what goes on inside that loop is something like
+
+for pgn in PGNs:
+  optimal move = go use that stockfish api to find the optimal move for that, at depth 30
+  
+  optimizedpgn = pgn + optimal move
+  
+  append optimizedpgn to optimalmovelist
+
+and then print the optimalmovelist
+
+this is supposed to be used on a console of course.
+
