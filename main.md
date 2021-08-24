@@ -28,16 +28,26 @@ optimalMoveList = ["1.Nf3 d5 2.d4", "1.e5 g6"]
 
 what goes on inside that loop is something like
 
-for pgn in PGNs:
-  optimal move = go use that stockfish api to find the optimal move for that, at depth 30
+  for pgn in PGNs:
+    optimal move = go use that stockfish api to find the optimal move for that, at depth 30
   
-  optimizedpgn = pgn + optimal move
+    optimizedpgn = pgn + optimal move
   
-  append optimizedpgn to optimalmovelist
+    append optimizedpgn to optimalmovelist
 
-and then print the optimalmovelist
+... and then print the optimalmovelist
 
+So the steps are
 
+1. pip install stockfish
+2. actually install stockfish 
+3. create a file called
+bestmove.py:
+  from stockfish import Stockfish
+  stockfish = Stockfish("/path/to/file")
+
+  #make depth 30
+  stockfish.set_depth(30)
 
 
 ### moving my notion blog to github
