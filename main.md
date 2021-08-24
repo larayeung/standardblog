@@ -10,3 +10,12 @@ it seems a bit weird to have one repo per idea which may never pan out, and it m
 
 (lara) I disgree with Sam on where the issue lays. We've been using chesstempo to increase our elo, the basic spaced repetition algorithm - anki is a generalized solution to the "spaced repetition software" problem. Of course it won't work perfectly for like, math.
 
+### Writing stuff with the chess api
+
+hmm i will probably split this doc up when this doc is sufficiently big enough.
+
+anyway what i want to do is to be able to create a piece of code that spits out the optimal move given like, a pgn code.
+
+let's say i have an array of PGNs:
+
+PGNs =
