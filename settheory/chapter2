@@ -1,0 +1,30 @@
+A set is a collection of objects, considered as a single object. The objects making up the set are called elements or members of the set. If $x$ is !!a{element} of a set~$a$, we write $x \in a$; if not, we write $x \notin a$. The set which has no !!{element}s is called the \emph{empty} set and denoted~``$\emptyset$''.
+
+It does not matter how we \emph{specify} the set, or how we \emph{order} its !!{element}s, or indeed how \emph{many times} we count its !!{element}s. All that matters are what its !!{element}s are. We codify this in in the following principle.
+\begin{defn}[Extensionality]
+	If $A$ and $B$ are sets, then $A = B$ iff every !!{element} of~$A$ is also !!a{element} of~$B$, and
+	vice versa. That is: $$\forall x(x \in A \liff x \in B) \lonlyif A = B$$
+\end{defn}\noindent
+In this definition, I used both lowercase and uppercase letters to stand for objects. I'll continue to do this in what follows. Don't read anything special into it; I'm guided by nothing more than readability.
+
+Extensionality licenses some notation. In general, when we have some objects $a_{1}$, \dots, $a_{n}$, then $\{a_{1}, \dots, a_{n}\}$ is the \emph{set} whose !!{element}s are $a_1, \ldots, a_n$. I emphasise the word ``\emph{the}'', since Extensionality tells us that there can be only \emph{one} such set. Indeed, Extensionality also licenses the following:
+	$$\{a, a, b\} = \{a, b\} = \{b,a\}$$
+This delivers on the point that, when we consider sets, we don't care about the order of their !!{element}s, or how many times they are specified.  
+%We can justify some further notation on the basis of Extensionality. As a matter of fact, Richard only has one sibling, Ruth. So \emph{the} set of Richard's siblings is a set with only one !!{element}, namely Ruth, and we write \emph{this} set thus: $\{\text{Ruth}\}$. But and ``\emph{this}'', here, because Extensionality tells us that there can be only \emph{one} sets whose sole !!{element} is Ruth. 
+
+We often specify a set by invoking some property that its !!{element}s share. So, as a matter of fact, the number $6$ is the only perfect number between $0$ and $10$. So, using Extensionality, we can say:
+\begin{align*}
+	\{6\} =\Setabs{x}{x\text{ is perfect and }0 \leq x \leq 10}
+\end{align*}
+We read the notation on the right as ``the set of $x$'s such that $x$ is perfect and $0 \leq x \leq 10$''. The identity here confirms that, when we consider sets, we don't care about how they are specified. And, more generally, Extensionality licenses the notation $\Setabs{x}{\phi(x)}$, for \emph{the} set of $x$'s such that $\phi(x)$.
+
+%Note: it follows from Extensionality that the !!{element}s of a
+%set are not ordered and that each !!{element} occurs only once. When we
+%\emph{specify} or \emph{describe} a set, !!{element}s may occur
+%multiple times and in different orders, but any descriptions that only
+%differ in the order of !!{element}s or in how many times !!{element}s
+%are listed describes the same set.
+
+Finally, Extensionality gives us a general way to show that sets are identical. To show that $A= B$, show that if $x \in A$ then $x \in B$, and that if $x \in B$ then $x \in A$ (for any $x$).
+\begin{prob}
+Prove that there is at most one empty set, i.e., show that if $A$ and $B$ are sets with no !!{element}s, then $A = B$.
