@@ -16,11 +16,16 @@ start the python3 console with python3
 
 from stockfish import Stockfish
 
-stockfish = Stockfish("/Users/zhelyabuzhsky/Work/stockfish/stockfish-9-64")
+stockfish = Stockfish("path")
 
 stockfish.get_parameters()
 {'Write Debug Log': 'false', 'Contempt': 0, 'Min Split Depth': 0, 'Threads': 1, 'Ponder': 'false', 'Hash': 16, 'MultiPV': 1, 'Skill Level': 20, 'Move Overhead': 30, 'Minimum Thinking Time': 20, 'Slow Mover': 80, 'UCI_Chess960': 'false', 'UCI_LimitStrength': 'false', 'UCI_Elo': 1350}
 
-{'Write Debug Log': 'false', 'Min Split Depth': 0, 'Ponder': 'false', 'Hash': 16, 'MultiPV': 1, 'Skill Level': 20, 'Move Overhead': 30, 'Minimum Thinking Time': 20, 'Slow Mover': 80, 'UCI_LimitStrength': 'false', 'UCI_Elo': 1350}
+stockfish = Stockfish(parameters={"Threads":11,"Hash": 65336,"Write Debug Log": "true"})
 
-stockfish = Stockfish(parameters={"Threads":2})
+stockfish.set_depth(15)
+
+
+stockfish.set_fen_position("rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 4 4")
+
+
