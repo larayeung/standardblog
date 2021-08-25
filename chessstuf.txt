@@ -1,0 +1,19 @@
+sudo apt-get update && sudo apt-get upgrade
+python 3 should already be installed
+apt install python3-pip
+pip install stockfish
+
+
+apt install unzip
+
+wget https://stockfishchess.org/files/stockfish_14_linux_x64_avx2.zip
+unzip stockfish-10-linux.zip
+chmod +x stockfish-10-linux/Linux/stockfish_10_x64
+./stockfish-10-linux/Linux/stockfish_10_x64
+
+start the python3 console with python3
+
+
+import chess
+import chess.engine
+engine = chess.engine.SimpleEngine.popen_uci("/root/stockfishengine/stockfish_14_x64_avx2")
