@@ -1,0 +1,82 @@
+% Part: naive
+% Chapter: first-steps
+% Section: subsets
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+	
+	\olfileid{sfr}{set}{sub}
+	\olsection{Subsets}
+
+%\begin{explain}
+%	Sets are made up of their !!{element}s. In some sense, one might say that every !!{element} of a set is a``part of'' that set. But there is also a sense that some of the !!{element}s
+%	of a set \emph{taken together} are a ``part of'' that set. For
+%	instance, the number~$2$ is ``part of'' the set of integers, but the set
+%	of even numbers is also a ``part of'' the set of integers. It's important
+%	to keep those two senses of ``being part of a set'' separate.
+%\end{explain}
+\begin{explain}
+	We will often want to compare sets. And one obvious kind of comparison one might make is as follows: \emph{everything in one set is in the other too}. This situation is sufficiently important for us to introduce some new notation:
+\end{explain}
+\begin{defn}[Subset]
+	If every !!{element} of a set $A$ is also !!a{element} of
+	$B$, then we say that $A$ is a \emph{subset} of $B$, written $A
+	\subseteq B$. That is: 
+	\begin{align*}
+			A \subseteq B&\text{ iff } \forall x(x \in A \lonlyif x \in B)
+	\end{align*}
+	If $A \subseteq B$ but $A \neq B$, we write $A \subsetneq B$ and say that $A$ is a \emph{proper subset} of $B$.
+\end{defn}
+\begin{ex}
+	Every set is a subset of itself, and $\emptyset$ is a
+	subset of every set. Also, $\{ a, b \} \subseteq \{ a, b, c \}$. But $\{ a, b, e \}$ is not a subset of $\{ a, b, c \}$, if $c \neq e$. 
+\end{ex}
+\begin{ex}
+	The number $2$ is an !!{element} of the set of integers, whereas the set of even numbers is a subset of the set of integers. However, a set may happen to \emph{both} be 
+	!!a{element} and a subset of a some other set, e.g., $\{0\} \in \{0, \{0\}\}$
+	and also $\{0\} \subseteq \{0, \{0\}\}$.
+\end{ex}\noindent
+Extensionality gives a criterion of identity for sets: $A = B$ iff
+	every !!{element} of~$A$ is also !!a{element} of~$B$ and vice versa.
+	The definition of ``subset'' defines $A \subseteq B$ precisely as the first
+	half of this criterion: every !!{element} of~$A$ is also !!a{element}
+	of~$B$. Of course the definition also applies if we switch $A$ and
+	$B$: that is, $B \subseteq A$ iff every !!{element} of $B$ is also !!a{element}
+	of~$A$. And that, in turn, is exactly the ``vice versa'' part of
+	Extensionality. In other words, Extensionality entails the following:
+\begin{prop}
+	$A = B$ iff both $A \subseteq B$ and $B \subseteq A$.
+\end{prop}\noindent
+Now is also a good opportunity to introduce some further bits of helpful notation. In defining subsets we say something of the shape ``every !!{element} of $A$ is \ldots'' (here the blank is filled ``!!a{element} of $B$''). But this is such a common \emph{shape} of expression that it will be helpful to introduce some formal notation for it.
+\begin{defn}\ollabel{forallxina}
+	$(\forall x \in A)\phi$ abbreviates $\forall x(x \in A \lonlyif \phi)$. Similarly, $(\exists x \in A)\phi$ abbreviates $\exists x(x \in A \land \phi)$. 
+\end{defn}\noindent
+So, using this notation, we can say that $A \subseteq B$ iff $(\forall x \in A)x \in B$. 
+
+Now we move on to considering a certain kind of set: the set of all subsets of a given set. 
+\begin{defn}[Power Set]
+	The set consisting of all subsets of a set~$A$ is called the
+	\emph{power set of}~$A$, written $\Pow{A}$. That is
+	\[\Pow{A} =  \Setabs{x}{x \subseteq A}\]
+\end{defn}
+\begin{ex}
+	The subsets of $\{ a, b, c \}$ are:
+	$\emptyset$, $\{a \}$, $\{b\}$, $\{c\}$, $\{a, b\}$, $\{a, c\}$, $\{b,
+	c\}$, $\{a, b, c\}$. The set of all these subsets is therefore:
+	\[
+	\Pow{\{ a, b, c \}} = \{\emptyset, \{a \}, \{b\}, \{c\}, \{a, b\},
+	\{b, c\}, \{a, c\}, \{a, b, c\}\}
+	\]
+\end{ex}\noindent
+We can introduce similar notation as in \olref{forallxina} for subsets, letting $(\forall x \subseteq A)\phi$ abbreviate $\forall x(x \subseteq A \lonlyif \phi)$. To illustrate these notations, combined, observe that $(\forall x \subseteq A)x \in \Pow{A}$ and $(\forall x \in \Pow{A})x\subseteq A$. 
+\begin{prob}
+	List all subsets of $\{a, b, c, d\}$.
+\end{prob}
+
+\begin{prob}
+	Show that if $X$ has $n$ !!{element}s, then $\Pow{X}$ has $2^n$
+	!!{element}s.
+\end{prob}
+
+\end{document}

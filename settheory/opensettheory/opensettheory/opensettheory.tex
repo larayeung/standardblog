@@ -1,0 +1,64 @@
+% open-logic-complete.tex
+% master file to produce a complete release version
+% without references, markup, etc.
+
+\documentclass[openany, 10pt, oneside]{memoir}
+\midsloppy
+% we're compiling from main directory
+\newcommand{\olpath}{.}
+
+\usepackage{mathpazo}
+\usepackage{helvet}
+\usepackage{courier}
+\linespread{1.05} % Palatino looks better with this.
+
+\usepackage{gitinfo2}
+
+\input{\olpath/sty/open-logic.sty}
+\input{\olpath/sty/open-logic-defer.sty}
+\input{\olpath/sty/opensettheory.sty}		
+
+\includeenv{editorial}
+
+\problemsperchapter
+
+\let\cleardoublepage\clearpage
+
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{titlingpage}
+\begin{raggedleft}
+\HUGE
+\selectfont\bfseries\sffamily
+OPEN SET THEORY
+\vskip 3ex
+\normalfont\huge
+Tim Button\\
+and the \href{http://openlogicproject.org/}{Open Logic Project}
+
+%\vskip 4ex
+%\Large
+%Revision\gitRel: \gitAbbrevHash{} (\gitBranch)\\
+%\gitAuthorDate
+\end{raggedleft}  
+%\vfill
+%
+%\ollicense
+\end{titlingpage}
+
+\pagestyle{openlogic}
+
+\include{content/opensettheory-about}
+
+\tableofcontents*
+
+\olimport[content]{content}
+ 
+%\photocredits
+
+\bibliographystyle{\olpath/bib/natbib-oup}
+\bibliography{\olpath/bib/opensettheory}
+
+  \end{document}

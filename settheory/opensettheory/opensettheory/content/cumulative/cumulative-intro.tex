@@ -1,0 +1,69 @@
+% Chapter: Naive
+
+\documentclass[../../../include/open-logic-chapter]{subfiles}
+
+\begin{document}
+\chapter*{Introduction to Part \ref{part:Cumulative}}
+\noindent Part \ref{part:Naive} discussed sets in a na\"{i}ve, informal way. It is now time to tighten this up, and provide a formal theory of sets. That is the aim of Part \ref{part:Cumulative}. 
+
+Our formal theory is a first-order theory with just one two-place predicate, $\in$. We will lay down several axioms that govern the behaviour of the membership relation. However, we will introduce these axioms only as we need them, and consider how we might justify them as we encounter them. As a result, we will introduce our axioms \emph{throughout} the ensuing chapters.
+
+It might, though, be helpful for the reader to have a list of all the axioms in one place. So, here are \emph{all} the axioms that we will consider in Part \ref{part:Cumulative}. As in Part \ref{part:Naive}, my choice of lowercase and uppercase letters is guided only by readability:
+
+\
+\\\emph{Extensionality.} 
+\\$\forall A \forall B(\forall x(x \in A \liff x \in B) \lonlyif A = B)$
+
+\
+\\\emph{Union.} 
+\\$\forall A \exists U \forall x(x \in U \liff (\exists b \in A)x \in b)$
+\\i.e.\ $\bigcup A$ exists for any set $A$
+
+\
+\\\emph{Pairs.} 
+\\$\forall a \forall b \exists P \forall x (x \in P \liff (x = a \lor x = b))$
+\\i.e.\ $\{a, b\}$ exists for any $a$ and $b$
+
+\
+\\\emph{Powersets.}
+\\$\forall A \exists P \forall x(x \in P \liff (\forall z \in x)z \in A)$
+\\i.e.\ $\Pow{A}$ exists for any set $A$
+
+\
+\\\emph{Infinity.} 	
+\\$\exists I((\exists o \in I)\forall x(x \notin o) \land (\forall x \in I)(\exists s \in I)\forall z(z \in s \liff (z \in x \lor z = x)))$
+\\i.e.\ there is a set with $\emptyset$ as !!a{element} and which 
+is closed under $x \mapsto x \cup \{x\}$
+
+\
+\\\emph{Foundation.}
+\\$\forall A(\forall x\, x \notin A \lor (\exists b \in A)(\forall x \in A)x \notin b)$
+\\i.e.\ $A = \emptyset$ or $(\exists b \in A)A\cap b = \emptyset$
+
+\
+\\\emph{Well-Ordering.} 
+\\For every set $A$, there is a relation that well-orders $A$.
+\\(Writing this one out in first-order logic is too painful to bother with).
+
+\
+\\\emph{Separation Scheme.} For any formula $\phi(x)$ which does not contain ``$S$'':
+\\$\forall A \exists S \forall x(x \in S \liff (\phi(x) \land x \in A))$
+\\i.e.\ $\Setabs{x \in A}{\phi(x)}$ exists for any set $A$
+
+\
+\\\emph{Replacement Scheme.} For any formula $\phi(x, y)$ which does not contain ``$B$'':
+\\$\forall A((\forall x \in A)\exists \bang y \phi(x,y) \lonlyif \exists B \forall y (y \in B \liff (\exists x \in A)\phi(x,y)))$
+\\i.e.\ $\Setabs{y}{(\exists x \in A)\phi(x,y)}$ exists for any $A$, if $\phi$ is ``functional''
+
+\
+\\In both schemes, the formulas may contain parameters. 
+
+\
+\\$\Zminus$ is Extensionality, Union, Pairs, Powersets, Infinity, Separation.
+\\$\Z$ is $\Zminus$ plus Foundation.
+\\$\ZFminus$ is $\Z$ plus Replacement.
+\\$\ZF$ is $\ZFminus$ plus Foundation.
+\\$\ZFC$ is $\ZF$ plus Well-Ordering.
+
+
+\end{document}

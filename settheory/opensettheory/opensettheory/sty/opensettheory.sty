@@ -1,0 +1,116 @@
+% This file just overwrites certain decisions, locally
+\usepackage{xcolor}
+\definecolor{darkred}{rgb}{0.75,0,0}
+\definecolor{darkgreen}{rgb}{0,0.75,0}
+\definecolor{darkblue}{rgb}{0,0,0.75}
+
+\newcommand\unitline{\text{L}}
+\newcommand\unitsquare{\text{S}}
+
+\let\oldphi\phi
+\let\phi\varphi
+\let\oldepsilon\epsilon
+\let\epsilon\varepsilon
+
+\settexttoken{enumerable}{countable}{countable}
+\settexttoken{nonenumerable}{uncountable}{uncountable}
+\settexttoken{denumerable}{countably infinite}{countably infinite}
+%\settexttoken{element}*{element}{elements}
+\settexttoken{element}{member}{members}
+
+\DeclareDocumentCommand \cardneq { m m } {#1 \napprox #2}
+\DeclareDocumentCommand \cardnless { m m } {#1 \npreceq #2}
+\DeclareDocumentCommand \ordeq { m m } {#1 \cong #2}
+\DeclareDocumentCommand \ordneq { m m } {#1 \ncong #2}
+\DeclareDocumentCommand \funimage { m m } {#1[#2]}
+
+
+\newcommand\stageshier{\emph{Stages-are-key}}
+\newcommand\stagesord{\emph{Stages-are-ordered}}
+\newcommand\stagesacc{\emph{Stages-accumulate}}
+\newcommand\stagessucc{\emph{Stages-keep-going}}
+\newcommand\stagesinf{\emph{Stages-hit-infinity}}
+\newcommand\limofsize{\emph{Limitation-of-size}}
+\newcommand\stagesinex{\emph{Stages-are-inexhaustible}}
+\newcommand\stagescofin{\emph{Stages-are-super-cofinal}}
+
+\newcommand\lonlyif\lif
+\renewcommand\to\longrightarrow
+\usepackage{units} %for nicefrac
+
+\newtheorem*{axiom*}{\textbf{AXIOM.}}
+
+\makepagestyle{openlogic}
+\makeevenhead{openlogic}{\thepage\hspace{1em}\textsc{\MakeLowercase{\leftmark}}}{}{}
+\makeoddhead{openlogic}{}{}{\textsc{\MakeLowercase{\rightmark}}\hspace{1em}\thepage}
+\makeevenfoot {openlogic}{}{}{}
+\makeoddfoot{openlogic}{}{}{}
+\makepsmarks{openlogic}{
+	\nouppercaseheads
+	\createmark{chapter}{left}{nonumber}{}{}
+	\createplainmark{toc}{both}{\contentsname}
+	\createplainmark{lof}{both}{\listfigurename}
+	\createplainmark{lot}{both}{\listtablename}
+	\createplainmark{bib}{both}{\bibname}
+	\createplainmark{index}{both}{\indexname}
+	\createplainmark{glossary}{both}{\glossaryname}
+}
+
+\setstocksize{254mm}{173mm} %Height and width of stock
+\settrimmedsize{234mm}{153mm}{*} %Height and width of trimmed page
+\settrims{10mm}{10mm} %Trims top and fore-edge
+\settypeblocksize{199mm}{118mm}{*} %Height and width of typeblock
+\setlrmargins{*}{*}{1} %Left and right margins are equal
+\setulmargins{*}{*}{1} %Top and bottom margins are equal 
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0em}
+\checkandfixthelayout
+
+\usetikzlibrary{lindenmayersystems}
+\pgfdeclarelindenmayersystem{Hilbert curve}{
+	\rule{L -> +RF-LFL-FR+}
+	\rule{R -> -LF+RFR+FL-}}
+
+\newcommand\straighttext[1]{\text{\textnormal{#1}}}
+\newcommand\closureofunder[2]{\straighttext{clo}_{#1}(#2)}
+\newcommand\Closureofunder[2]{\straighttext{Clo}_{#1}(#2)}
+\newcommand\equivrep[2]{[#1]_{#2}}
+\newcommand\equivclass[2]{#1/{_{#2}}}
+\newcommand\Intequiv{\sim}
+\newcommand\Ratequiv{\backsim}
+\newcommand\Realequiv{\Bumpeq}
+\newcommand\funrestrictionto[2]{#1\mathord{\restriction}_{#2}}
+\newcommand\fregeext[1]{\oldepsilon x #1x}
+\newcommand\fregenum[1]{\# x #1x}
+\newcommand\isomorphic{\cong}
+\newcommand\nisomorphic{\ncong}
+\newcommand*\bang{\text{\textnormal{\string!}}}
+\newcommand\precdot{\mathrel{\prec{\mkern -12mu \cdot}}}
+\newcommand\disjointsum{\sqcup}
+\newcommand\ordtype[1]{\straighttext{ord}(#1)}
+\newcommand\cardof[1]{|#1|}
+\newcommand\ordsucc[1]{#1^{+}}
+\newcommand\cardsucc[1]{#1^{\oplus}}
+%\newcommand\ordsumless{<_+}
+\newcommand\rlexless{\mathrel{\sphericalangle}}
+\newcommand\canonord\lhd
+%\newcommand\ordtimesless{<_\times}
+\newcommand\ordplus{+}
+\newcommand\ordtimes{\cdot}
+\newcommand\ordexpo[2]{#1^{(#2)}}
+\newcommand\cardplus{\oplus}
+\newcommand\cardtimes{\otimes}
+\newcommand\cardexpo[2]{#1^{#2}}
+\newcommand\funfromto[2]{{}^{#1}{#2}}
+\newcommand\setrank[1]{\straighttext{rank}(#1)}
+\DeclareMathOperator*{\supstrict}{\straighttext{lsub}}
+\newcommand\trcl[1]{\straighttext{trcl}(#1)}
+\newcommand\napprox{\mathrel{\not\approx}}
+\newcommand\ZF{\straighttext{ZF}}
+\newcommand\SP{\straighttext{SP}}
+\newcommand\ZFC{\straighttext{ZFC}}
+\newcommand\Z{\straighttext{Z}}
+\newcommand\ZFminus{\ZF^{-}}
+\newcommand\Zminus{\Z^{-}}
+
+\newcommand\cardfont[1]{\mathfrak{#1}}

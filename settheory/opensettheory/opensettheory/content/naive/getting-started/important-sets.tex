@@ -1,0 +1,19 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+	
+\olfileid{sfr}{set}{important}
+
+\olsection{Some important sets of numbers}\ollabel{important}
+In this book we will mostly consider sets whose !!{element}s are mathematical objects. Four such sets are important enough to have specific names:
+	\begin{align*}
+		\Nat &= \{0, 1, 2, 3, \ldots\} &\text{the set of natural numbers}\\
+		\Int &= \{\ldots, -2, -1, 0, 1, 2, \ldots\} & \text{the set of integers}\\
+		\Rat &= \Setabs{\nicefrac{m}{n}}{m, n \in \Int\text{ and }n \neq 0}&\text{the set of rationals}\\
+		\Real &= (-\infty, \infty)& \text{the set of real numbers (the continuum)}
+\end{align*}
+These are all \emph{infinite} sets; that is, they each have infinitely many !!{element}s. 
+
+As we move through these sets, we are adding \emph{more} numbers to our stock. Indeed, it should be clear that $\Nat \subseteq \Int \subseteq \Rat \subseteq \Real$: after all, every natural number is an integer; every integer is a rational; and every rational is a real. Equally, it should be clear that $\Nat \subsetneq \Int \subsetneq \Rat$, since $-1$ is an integer but not a natural number, and $\nicefrac{1}{2}$ is rational but not integer. It it is less obvious that $\Rat \subsetneq \Real$, i.e.\ that there are some real numbers which are not rational, but we'll return to this in \olref[sfr][arith][real]{realline}. 
+
+\end{document}

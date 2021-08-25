@@ -1,0 +1,20 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+	\olfileid{sfr}{cardinals}{card-cp}
+	\olsection{Cantor's Principle}\ollabel{card-cp}
+Cast your mind back to \olref[sfr][ordinals][vn]{vn}. We were discussing well-ordered sets, and I suggested that it would be nice to have objects which go proxy for well-orders. With this is mind, we introduced ordinals, and then showed in \olref[sfr][ordinals][ordtype]{ordtypesworklikeyouwant} that these behave as we would want them to, i.e.:
+\begin{align*}
+	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ iff }\tuple{A, <} \isomorphic \tuple{B, \lessdot}
+\end{align*}
+Cast your mind back even further, to \olref[sfr][set][equ]{equ}. There, working na\"ively, we introduced the notion of the ``size'' of a set. Specifically, we said that two sets are equinumerous, $\cardeq{A}{B}$, just in case there is !!a{bijection} $f \colon A \to B$. This is an intrinsically {simpler} notion than that of a well-ordering: we are only interested in !!{bijection}s, and not (as with order-isomorphisms) whether the !!{bijection}s ``preserve any structure''.
+
+This all gives rise to an obvious thought. Just as we introduced certain objects, \emph{ordinals}, to calibrate well-orders, we can introduce certain objects, \emph{cardinals}, to calibrate size. That is the aim of this chapter. 
+
+Before we say what these cardinals will be, we should lay down a principle which they ought to satisfy. Writing $\cardof{X}$ for the cardinality of the set $X$, we would hope to secure the following principle:
+\begin{align*}
+	\cardof{A} = \cardof{B}&\text{ iff }\cardeq{A}{B}
+\end{align*}
+I'll call this \emph{Cantor's} Principle, since Cantor was probably the first to have it very clearly in mind. (I'll say more about its relationship to \emph{Hume's} Principle in \olref[sfr][cardinals][card-hp]{card-hp}.) So our aim is to define $\cardof{X}$, for each $X$, in such a way that it delivers Cantor's Principle
+
+\end{document}

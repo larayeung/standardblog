@@ -1,0 +1,317 @@
+% Part:sets-functions-relations
+% Chapter: sets
+% Section: enumerability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{enm}
+
+\olsection{\printtoken{S}{enumerable} Sets}\ollabel{enm}
+
+One way to specify a finite set is by simply enumerating its !!{element}s. We do this when we define a set like so:
+$$\{a_1, a_2, \ldots, a_n\}$$
+Conversely, since every finite set has only finitely many !!{element}s,
+every finite set can be enumerated.  By this we mean: its !!{element}s can
+be put into a list (a list with a beginning, where each !!{element} of
+the list other than the first has a unique predecessor). 
+
+If we allow for certain kinds of infinite sets, then we will also allow some infinite sets to be enumerated. At this point, though, we probably need to stop to make things a bit more precise:
+\begin{defn}[Enumeration]
+An \emph{enumeration} of a set $A$ is !!a{bijection} whose range is $A$ and whose domain is either an initial set of natural numbers $\{0, 2, \ldots, n\}$ {or} the entire set of natural numbers $\Nat$. 
+\end{defn}
+\begin{explain}
+There is an intuitive underpinning to this use of the word \emph{enumeration}. For to say that we have enumerated a set $X$ is to say that there is !!a{bijection} $f$ which allows us to count out the elements of the set $X$. The $0$th element is $f(0)$, the 1st is $f(1)$, \ldots the $n$th is $f(n)$\ldots.\footnote{Yes, we will count from $0$, just as this book's initial chapter is chapter $0$. Others would start from $1$. But of course it makes no difference.} The rationale for this may be made even clearer by adding the following:
+\end{explain}
+\begin{defn}
+  \ollabel{defn:enumerable}
+  A set~$A$ is !!{enumerable} iff either $A = \emptyset$ or there is an enumeration of $A$. We say that $A$ is !!{nonenumerable} iff $A$ is not !!{enumerable}.
+\end{defn}
+\begin{explain}
+	So a set is countable iff it is empty or you can use an enumeration to count out its !!{element}s.
+\end{explain}
+\begin{ex}
+A function enumerating the natural numbers is simply the
+identity function $1_\Nat \colon \Nat \to \Nat$ given by $1_\Nat(n) = n$. A function enumerating the \emph{positive} natural numbers, $\Nat^+ = \Nat \setminus \{0\}$, is the function $g(n) = n + 1$, i.e.\ the successor function.
+\end{ex}
+
+\begin{prob}
+  Show that a set $X$ is !!{enumerable} iff either $X = \emptyset$ or there is !!a{surjection} $f\colon \Nat \to X$. Show that $X$ is !!{enumerable} iff there is !!a{injection}
+ $g\colon X \to \Nat$. 
+\end{prob}
+
+\begin{ex}
+The functions $f\colon \Nat \to \Nat$ and $g \colon \Nat \to \Nat$ given by
+\begin{align*}
+f(n) & = 2n \text{ and}\\
+g(n) & = 2n+1
+\end{align*}
+respectively enumerate the even natural numbers and the odd natural numbers. But neither is !!{surjective}, so neither is an enumeration of $\Nat$.
+\end{ex}
+
+\begin{prob}
+Define an enumeration of the square numbers $1$, $4$, $9$, $16$, \dots
+\end{prob}
+
+\begin{ex}
+	Let $\lceil x \rceil$ be the \emph{ceiling} function, which rounds
+	$x$ up to the nearest integer. Then the function $f \colon \Nat \to \Int$ given by:
+$$f(n) = (-1)^{n} \left\lceil\tfrac{n}{2}\right\rceil$$
+enumerates the set of
+integers~$\Int$ as follows:
+\[
+\begin{array}{c c c c c c c c}
+f(0) & f(1) & f(2) & f(3) & f(4) & f(5) & f(6) & \dots \\ \\
+\big\lceil \tfrac{0}{2} \big\rceil & -\big\lceil \tfrac{1}{2}\big\rceil &  \big\lceil \tfrac{2}{2} \big\rceil & -\big\lceil \tfrac{3}{2} \big\rceil & \big\lceil \tfrac{4}{2} \big\rceil  & -\big\lceil \tfrac{5}{2}\big\rceil & \big\lceil \tfrac{6}{2} \big\rceil & \dots \\ \\
+0 & -1 & 1 & -2 & 2 & -3 & 3& \dots
+\end{array}
+\]
+Notice how $f$ generates the values of $\Int$ by
+``hopping'' back and forth between positive and negative integers. You can also think of $f$ as defined by cases as follows:
+\[
+f(n) = \begin{cases}
+%  0 & \text{if $n = 0$}\\
+  \frac{n}{2} & \text{if $n$ is even}\\
+  -\frac{n+1}{2} & \text{if $n$ is odd}
+  \end{cases}
+\]
+\end{ex}
+
+\begin{prob}
+Show that if $X$ and $Y$ are !!{enumerable}, so is $X \cup Y$.
+\end{prob}
+
+\begin{prob}
+  Show by induction on $n$ that if $X_1$, $X_2$, \dots, $X_n$ are all
+  !!{enumerable}, so is $X_1 \cup \dots \cup X_n$.
+\end{prob}
+
+\olsection{Cantor's zig-zag method}
+\begin{explain}
+In the last section, we considered some ``easy'' enumerations. New we will consider something a bit harder. Consider the set of pairs of natural numbers, which we defined in chapter \ref{ch:Relations} thus:
+\[
+\Nat \times \Nat = \Setabs{\tuple{n,m}}{n,m \in \Nat}
+\]
+We can organize these ordered pairs into an \emph{array}, like so:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \textbf 0 & \textbf 1 & \textbf 2 & \textbf 3 & \dots \\
+\hline
+\textbf 0 & \tuple{0,0} & \tuple{0,1} & \tuple{0,2} & \tuple{0,3} & \dots \\
+\hline
+\textbf 1 & \tuple{1,0} & \tuple{1,1} & \tuple{1,2} & \tuple{1,3} & \dots \\
+\hline
+\textbf 2 & \tuple{2,0} & \tuple{2,1} & \tuple{2,2} & \tuple{2,3} & \dots \\
+\hline
+\textbf 3 & \tuple{3,0} & \tuple{3,1} & \tuple{3,2} & \tuple{3,3} & \dots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
+\end{array}
+\]
+Clearly, every ordered pair in $\Nat \times \Nat$ will appear
+exactly once in the array. In particular, $\tuple{n,m}$ will appear in
+the $n$th row and $m$th column. But how do we organize the elements of
+such an array into a ``one-dimensional'' list? The pattern in the array below
+demonstrates one way to do this (although of course there are many other options):
+\[
+\begin{array}{ c | c | c | c | c | c | c}
+& \textbf 0 & \textbf 1 & \textbf 2 & \textbf 3 & \textbf 4 &\dots \\
+\hline
+\textbf 0 & 0  & 1& 3 & 6& 10 &\ldots \\
+\hline
+\textbf 1 &2 & 4& 7 & 11 & \dots &\ldots \\
+\hline
+\textbf 2 & 5 & 8 & 12 & \ldots & \dots&\ldots \\
+\hline
+\textbf 3 & 9 & 13 & \ldots & \ldots & \dots & \ldots \\
+\hline
+\textbf 4 & 14 & \ldots & \ldots & \ldots & \dots & \ldots \\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots&\ldots & \ddots\\
+\end{array}
+\]\noindent
+This pattern is called \emph{Cantor's zig-zag method}. It  enumerates
+$\Nat \times \Nat$ as follows:
+\[
+\tuple{0,0}, \tuple{0,1}, \tuple{1,0}, \tuple{0,2}, \tuple{1,1},
+\tuple{2,0}, \tuple{0,3}, \tuple{1,2}, \tuple{2,1}, \tuple{3,0}, \dots
+\]
+And this establishes the following:
+\end{explain}
+\begin{prop}\ollabel{natsquaredenumerable}
+	$\Nat \times \Nat$ is !!{enumerable}
+\end{prop}
+\begin{proof}
+	Let $f \colon \Nat \to \Nat\times\Nat$ take each $k \in \Nat$ to the tuple $\tuple{n,m} \in \Nat \times \Nat$ such that $k$ is the value of the $n$th row and $m$th column in Cantor's zig-zag array. 
+\end{proof}
+\begin{explain}
+This technique also generalises rather nicely. For example, we can use it to enumerate the set of ordered triples
+of natural numbers, i.e.:
+\[
+\Nat \times \Nat \times \Nat = \Setabs{\tuple{n,m,k}}{n,m,k \in \Nat}
+\]
+We think of $\Nat \times \Nat \times \Nat$ as the Cartesian
+product of $\Nat \times \Nat$ with $\Nat$, that is,
+\[
+\Nat^3 = (\Nat \times \Nat) \times \Nat =
+\Setabs{\tuple{\tuple{n,m},k}}{n, m, k
+  \in \Nat }
+\]
+and thus we can enumerate $\Nat^3$ with an array by labelling one
+axis with the enumeration of $\Nat$, and the other axis with the
+enumeration of $\Nat^2$:
+\[
+\begin{array}{ c | c | c | c | c | c}
+& \textbf 0 & \textbf 1 & \textbf 2 & \textbf 3 & \dots \\
+\hline
+\mathbf{\tuple{0,0}} & \tuple{0,0,0} & \tuple{0,0,1} & \tuple{0,0,2} & \tuple{0,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,1}} & \tuple{0,1,0} & \tuple{0,1,1} & \tuple{0,1,2} & \tuple{0,1,3} & \dots \\
+\hline
+\mathbf{\tuple{1,0}} & \tuple{1,0,0} & \tuple{1,0,1} & \tuple{1,0,2} & \tuple{1,0,3} & \dots \\
+\hline
+\mathbf{\tuple{0,2}} & \tuple{0,2,0} & \tuple{0,2,1} & \tuple{0,2,2} & \tuple{0,2,3} & \dots\\
+\hline
+\vdots & \vdots & \vdots & \vdots & \vdots & \ddots \\
+\end{array}
+\]
+Thus, by using a method like Cantor's zig-zag method, we may
+similarly obtain an enumeration of~$\Nat^3$. And we can keep going, obtaining enumerations of $\Nat^n$ for any natural number $n$. So, we have:
+\end{explain}
+\begin{prop}
+	$\Nat^n$ is !!{enumerable}, for every $n \in \Nat$
+\end{prop}
+
+\olsection{Pairing functions and codes}
+\begin{explain}
+Cantor's zig-zag method makes the enumerability of $\Nat^n$ visually evident. But let us focus on our array depicting $\Nat^2$. Following the zig-zag line in the array and counting the places, we can check that $\tuple{1,2}$ is associated with the number 7. However, it would be nice if we could compute this more directly. That is, it would be nice to have to hand the \emph{inverse} of the zig-zag enumeration, $g\colon \Nat^2 \to \Nat$, such that
+\[
+g(\tuple{0,0}) = 0, \ \ g(\tuple{0,1}) = 1, \ \ g(\tuple{1,0}) = 2, \ \ \dots, \ \ g(\tuple{1,2}) = 7, \ \ \dots
+\]
+%would be helpful; then we would be able to calculate exactly when $\tuple{n, m}$ will occur in our enumeration. 
+In fact, we can define $g$ directly by making two observations. First: if the $n$th row and $m$th column contains value $v$, then the $(n+1)$th row and $(m-1)$th column contains value $v + 1$. Second: the first row of our enumeration consists of the triangular numbers, starting with $0$. Putting these two observations together, consider this function:
+$$g(n,m) = \frac{(n+m+1)(n+m)}{2} + n$$
+(Note: we often just write $g(n, m)$ rather that $g(\tuple{n, m})$, since it is easier on the eyes.) This tells you first to determine the $(n+m)^\text{th}$ triangle number, and then subtract $n$ from it. And it populates the array in exactly the way we would like. So in particular, the pair $\tuple{1, 2}$ is sent to $\frac{4 \times 3}{2} + 1 = 7$. 
+
+This function $g$ is the \emph{inverse} of an enumeration of a set of pairs. Such functions are called \emph{pairing functions}.
+\end{explain}
+\begin{defn}[Pairing function]
+	A function $f\colon X \times Y \to \Nat$ is an arithmetical \emph{pairing function} if $f$ is injective. We also say that $f$ \emph{encodes} $X \times Y$, and that for $f(x,y)$ is the \emph{code} for $\tuple{x,y}$.
+\end{defn}
+\begin{explain}
+The idea is that we can use such functions to encode, e.g., pairs of natural numbers; or, in other words, we can represent each \emph{pair} of elements using a \emph{single} number. Using the inverse of the pairing function, we can \emph{decode} the number, i.e., find out which \emph{pair} it represents.
+\end{explain}
+%
+%There are other enumerations of $(\Nat^+)^2$ that make it easier to figure out what their inverses are. Here is one. Instead of visualizing the enumeration in an array, start with the list of positive integers associated with (initially) empty spaces. Imagine filling these spaces successively with pairs $\tuple{n,m}$ as follow. Starting with the pairs that have 1 in  the first place (i.e., pairs $\tuple{1,m}$), put the first (i.e., $\tuple{1,1}$) in the first empty place, then skip an empty space, put the second (i.e., $\tuple{1,2}$) in the next empty place, skip one again, and so forth. The (incomplete) beginning of our enumeration now looks like this
+%\[
+%\begin{array}{c c c c c c c c c c c}
+%f(1) & f(2) & f(3) & f(4) & f(5) & f(6) & f(7) & f(8) & f(9) & f(10) & \dots \\ \\
+%\tuple{1,1} &  & \tuple{1,2} &  & \tuple{1,3} & & \tuple{1,4} &  & \tuple{1,5} &  & \dots \\
+%\end{array}
+%\]
+%Repeat this with pairs $\tuple{2,m}$ for the place that still remain empty, again skipping every other empty place:
+%\[
+%\begin{array}{c c c c c c c c c c c}
+%f(1) & f(2) & f(3) & f(4) & f(5) & f(6) & f(7) & f(8) & f(9) & f(10) & \dots \\ \\
+%\tuple{1,1} & \tuple{2,1} & \tuple{1,2} &  & \tuple{1,3} & \tuple{2,2} & \tuple{1,4} &  & \tuple{1,5} &  \tuple{2,3} & \dots \\
+%\end{array}
+%\]
+%Enter pairs $\tuple{3,m}$, $\tuple{4,m}$, etc., in the same way. Our completed enumeration thus starts like this:
+%\[
+%\begin{array}{c c c c c c c c c c c}
+%f(1) & f(2) & f(3) & f(4) & f(5) & f(6) & f(7) & f(8) & f(9) & f(10) & \dots \\ \\
+%\tuple{1,1} & \tuple{2,1} & \tuple{1,2} & \tuple{3,1}  & \tuple{1,3} & \tuple{2,2} & \tuple{1,4} & \tuple{4,1}  & \tuple{1,5} &  \tuple{2,3} & \dots \\
+%\end{array}
+%\]
+%If we number the cells in the array above according to this enumeration, we will not find a neat zig-zag line, but this arrangement:
+%\[
+%\begin{array}{ c | c | c | c | c | c | c | c }
+%& \textbf 1 & \textbf 2 & \textbf 3 & \textbf 4 & \textbf 5 & \textbf 6 & \dots \\
+%\hline
+%\textbf 1 & 1 & 3 & 5 & 7 & 9 & 11 & \dots \\
+%\hline
+%\textbf 2 & 2 & 6 & 10 & 14 & 18 & \dots & \dots \\
+%\hline
+%\textbf 3 & 4 & 12 & 20 & 28 & \dots & \dots & \dots \\
+%\hline
+%\textbf 4 & 8 & 24 & 40 & \dots & \dots & \dots & \dots \\
+%\hline
+%\textbf 5 & 16 & 48 & \dots & \dots & \dots & \dots & \dots \\
+%\hline
+%\textbf 6 & 32 & \dots & \dots & \dots & \dots & \dots & \dots \\
+%\hline
+%\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \ddots\\
+%\end{array}
+%\]
+%
+%We can see that the pairs in the first row are in the odd numbered places of our enumeration, i.e., pair $\tuple{1,m}$ is in place $2m-1$; pairs in the second row, $\tuple{1,m}$, are in places whose number is the double of an odd number, specifically,  $2 \cdot (2m-1)$; pairs in the third row, $\tuple{1,m}$, are in places whose number is four times an odd number, $4 \cdot (2m-1)$; and so on. The factors of $(2m-1)$ for each row, $1, 2, 4, 8, \dots$, are powers of 2: $2^0, 2^1, 2^2, 2^3, \dots$ In fact, the relevant exponent is one less than the first member of the pair in question. Thus, for pair $\tuple{n,m}$ the factor is $n-1$.  This gives us the general formula: $2^{n-1} \cdot (2m-1)$, and hence:
+%\end{explain}
+%\begin{ex}
+%The function $f\colon (\Nat^+)^2 \to \Nat^+$ given by
+%\[
+%h(n,m) = 2^{n-1} (2m-1)
+%\]
+%is a pairing function for the set of pairs of positive integers $(\Nat^+)^2$.
+%\end{ex}
+%\begin{explain}
+%Accordingly, in our second enumeration of $(\Nat^+)^2$, the pair $\tuple{2,3}$ is in position $2^{2-1} \cdot (2 \cdot 3 - 1) = 2 \cdot 5 = 10$; pair $\tuple{3,7}$ is in position $2^{3-1} \cdot (2 \cdot 7 - 1)  = 52$.
+%\end{explain}
+%
+%Another common pairing function that encodes $(\Nat^+)^2$ is the following:
+%\begin{ex}
+%The function $f\colon (\Nat^+)^2 \to \Nat^+$ given by
+%\[
+%j(n,m) = 2^n3^m
+%\]
+%is a pairing function for the set of pairs of positive integers $(\Nat^+)^2$.
+%\end{ex}
+%
+%\begin{explain}
+%$j$ is injective, but nor surjective.  That means the inverse of $j$ is a partial, surjective function, and hence an enumeration of $(\Nat^+)^2$. (Exercise.)
+%\end{explain}
+\begin{prob}
+Give an enumeration of the set of all non-negative rational numbers. 
+\end{prob}
+
+\begin{prob}
+Show that $\Rat$ is !!{enumerable}. %(A rational number is one that can be written as a fraction $z/m$ with $z \in \Int$, $m \in \Nat^+$).
+\end{prob}
+
+%\begin{prob}
+%Define an enumeration of $\Bin^*$.
+%\end{prob}
+
+%\begin{prob}
+%Recall from your introductory logic course that each possible truth
+%table expresses a truth function. In other words, the truth functions
+%are all functions from $\Bin^k \to \Bin$ for some~$k$. Prove that the
+%set of all truth functions is enumerable.
+%\end{prob}
+
+\begin{prob}
+Show that the set of all finite subsets of an arbitrary infinite
+!!{enumerable} set is !!{enumerable}.
+\end{prob}
+
+\begin{prob}
+A subset of $\Nat$ is said to be \emph{cofinite} iff it is the complement of a finite set $\Nat$; that is, $X \subseteq \Nat$ is cofinite iff $\Nat\setminus X$ is finite. Let
+$I$ be the set whose !!{element}s are exactly the finite and cofinite subsets of $\Nat$. Show that $I$ is !!{enumerable}.
+\end{prob}
+
+%\begin{prob}
+%Show that the !!{enumerable} union of !!{enumerable} sets is
+%!!{enumerable}. That is, whenever $X_1$, $X_2$, \dots{} are sets, and
+%each $X_i$ is !!{enumerable}, then the union $\bigcup_{i=1}^\infty
+%X_i$ of all of them is also !!{enumerable}. [NB: this is hard!]
+%\end{prob}
+
+\begin{prob}
+Let $f \colon X \times Y \to \Nat$ be an arbitrary pairing function. Show that the inverse of $f$ is an enumeration of $X \times Y$.
+\end{prob}
+
+\begin{prob}
+Specify a function that encodes $\Nat^3$.
+\end{prob}
+
+\end{document}

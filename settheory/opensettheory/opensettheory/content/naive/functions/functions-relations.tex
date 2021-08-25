@@ -1,0 +1,68 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: functions-relations
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+
+\begin{document}
+
+\olfileid{sfr}{fun}{rel}
+
+\olsection{Functions as relations}\ollabel{funrel}
+
+\begin{explain}
+A function which maps !!{element}s of~$X$ to !!{element}s of~$Y$
+obviously defines a relation between $X$ and $Y$, namely the relation
+which holds between $x$ and $y$ iff $f(x) = y$.  In fact, we might
+even---if we are interested in reducing the building blocks of
+mathematics for instance---\emph{identify} the function $f$ with this
+relation, i.e., with a set of pairs.  This then raises the question:
+which relations define functions in this way?
+\end{explain}
+
+\begin{defn}[Graph of a function]
+Let $f\colon X \to Y$ be a function. The \emph{graph} of~$f$
+is the relation $R_f \subseteq X \times Y$ defined by
+\[
+R_f = \Setabs{\tuple{x,y}}{f(x) = y}.
+\]
+\end{defn}
+\begin{explain}
+	This is unique, by Extensionality. Moreover, Extensionality (on sets) will immediate vindicate the implicit principle of extensionality I mentioned for functions, whereby if $f$ and $g$ share a domain and codomain then they are identical if they agree on all values. 
+	
+	Similarly, if a relation is ``functional'', then it is the graph of a function. 
+\end{explain}
+\begin{prop}
+Let $R \subseteq A \times B$ be such that:
+\begin{enumerate}
+	\item If $Rxy$
+and $Rxz$ then $y = z$; and 
+	\item for every $x \in A$ there is some $y \in B$ such that $\tuple{x, y} \in R$.  
+	\end{enumerate}
+Then $R$ is the graph of the
+function $f\colon A \to B$ defined thus: $f(x) = y$ iff $Rxy$. 
+\end{prop}
+\begin{proof}
+Suppose there is a $y$ such that $Rxy$.  If there were another $z
+\neq y$ such that $Rxz$, the condition on $R$ would be
+violated. Hence, if there is a $y$ such that $Rxy$, that $y$ is
+unique, and so $f$ is well-defined.  Obviously, $R_f = R$. 
+\end{proof}
+\begin{explain}
+	As such, and henceforth, we will identify functions with certain relations, i.e.\ with certain sets. Note, though, that the spirit of this ``identification'' is as in \olref[sfr][rel][ref]{ref}: it is not a claim about the metaphysics of functions, but an observation that it is convenient to \emph{treat} functions as certain sets. 
+	
+	One reason that this is so convenient, is that we can now consider performing similar operations on functions as we performed on relations (see \olref[sfr][rel][ops]{ops}). In particular:
+	\end{explain}
+\begin{defn}\ollabel{defnfunimage}
+	 Let $f \colon A \to B$ be a function with $C\subseteq A$.
+	 
+	 The \emph{restriction} of $f$ to $C$ is $\funrestrictionto{f}{C} = \Setabs{\tuple{x, y} \in f}{x \in C}$.
+
+	The \emph{application} of $f$ to $C$ is $\funimage{f}{C} = \Setabs{f(x)}{x \in C}$. We also call this the \emph{image} of $C$ under $f$.
+\end{defn}
+\begin{explain}
+	It follows from these definition that $\ran{f} = \funimage{f}{\dom{f}}$, for any function $f$. These notions are exactly as one would expect, given \olref[sfr][rel][ops]{relationoperations} and our identification of functions with relations. But two other operations---inverses and relative products---require a little more detail. We will provide that in the next two sections.
+\end{explain}
+
+\end{document}

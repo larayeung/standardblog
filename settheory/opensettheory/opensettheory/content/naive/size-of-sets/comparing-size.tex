@@ -1,0 +1,100 @@
+% Part:sets-functions-relations
+% Chapter: sets
+% Section: comparing-sizes
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{siz}{car}
+
+\olsection{Sets of different sizes, and Cantor's Theorem}
+
+\begin{explain}
+	We have offered a precise statement of the idea that two sets have the same
+size. We can
+also offer a precise statement of the idea that one set is smaller than another. 
+Our definition of
+``is smaller than (or equinumerous)'' will require, instead of a
+!!{bijection} between the sets, !!a{injection} from the first
+set to the second. If such a function exists, the size of the first
+set is less than or equal to the size of the second. Intuitively,
+!!a{injection} from one set to another guarantees that the range of
+the function has at least as many !!{element}s as the domain, since no two
+!!{element}s of the domain map to the same !!{element} of the range.
+\end{explain}
+\begin{defn}
+$A$ is \emph{no larger than}~$B$, written $\cardle{A}{B}$, iff there
+  is !!a{injection} $f \colon A \to B$.
+\end{defn}\noindent
+It is clear that this is a reflexive and transitive relation, but that it is not symmetric (this is left as an exercise). We can also introduce a notion, which states that one set is (strictly) smaller than another. 
+\begin{defn}
+$A$ is \emph{smaller than}~$B$, written $\cardless{A}{B}$, iff
+  there is !!a{injection}~$f\colon A \to B$ but no
+  !!{bijection}~$g\colon A \to B$, i.e.\ $\cardle{A}{B}$ and $\cardneq{A}{B}$.
+\end{defn}\noindent
+It is clear that this is relation is anti-reflexive, anti-symmetric, and transitive. (This is left as an exercise.) Using this notation, we can say that a set $A$ is !!{enumerable} iff $\cardle{A}{\Nat}$, and that $A$ is !!{nonenumerable} iff $\cardless{\Nat}{A}$. This allows us to restate \olref[sfr][siz][nen]{thm-nonenum-pownat} as the observation that $\cardless{\Nat}{\Pow{\Nat}}$. In fact, \citet{Cantor1892} proved that this last point is \emph{perfectly general}:
+\begin{thm}[Cantor]\ollabel{thm:cantor}
+$\cardless{A}{\Pow{A}}$, for any set $A$
+\end{thm}
+\begin{proof}
+	The map $f(x) = \{x\}$ is !!a{injection} $f \colon A \to \Pow{A}$, so that $\cardle{A}{\Pow{A}}$. It remains to show that $\cardneq{A}{\Pow{A}}$. So, for reductio, suppose $A \approx \Pow{A}$, i.e.\ there is some bijection $g \colon A \to \Pow{A}$. Now consider:
+	\begin{align*}
+		D &:= \Setabs{x \in A}{x \notin g(x)}
+	\end{align*}
+	Note that $D \subseteq A$, so that $D \in \Pow{A}$. Since $g$ is !!a{bijection}, there is some $c \in A$ such that $g(c) = D$. But now reason thus:
+	\begin{align*}
+		c \in g(c) \text{ iff }c \in D \text{ iff }c \notin g(c)
+	\end{align*}
+	This is a contradiction; so $\cardneq{A}{\Pow{A}}$.
+%The function~$f \colon X \to \Pow{X}$ that maps any $x \in X$ to its
+%singleton~$\{x\}$ is !!{injective}, since if $x \neq y$ then also $f(x) =
+%\{x\} \neq \{y\} = f(y)$.
+%
+%There cannot be !!a{surjective} function~$g\colon X \to \Pow{X}$, let
+%alone a !!{bijective} one. For suppose that $g\colon X \to \Pow{X}$.
+%Since $g$ is total, every $x \in X$ is mapped to a subset $g(x)
+%\subseteq X$. We show that $g$ cannot be surjective. To do this, we
+%define a subset~$Y \subseteq X$ which by definition cannot be in the
+%range of~$g$. Let
+%\[
+%\overline{Y} = \Setabs{x \in X}{x \notin g(x)}.
+%\]
+%Since $g(x)$ is defined for all $x \in X$, $\overline{Y}$ is clearly a
+%well-defined subset of~$X$.  But, it cannot be in the range
+%of~$g$. Let $x \in X$ be arbitrary, we show that $\overline{Y} \neq
+%g(x)$.  If $x \in g(x)$, then it does not satisfy $x \notin g(x)$, and
+%so by the definition of~$\overline{Y}$, we have $x \notin
+%\overline{Y}$.  If $x \in \overline{Y}$, it must satisfy the defining
+%property of~$\overline{Y}$, i.e., $x \notin g(x)$.  Since $x$ was
+%arbitrary this shows that for each $x \in X$, $x \in g(x)$ iff $x
+%\notin \overline{Y}$, and so $g(x) \neq \overline{Y}$.  So
+%$\overline{Y}$ cannot be in the range of~$g$, contradicting the
+%assumption that~$g$ is surjective.
+\end{proof}
+
+\begin{explain}
+  It's instructive to compare the proof of \olref{thm:cantor} to that
+  of \olref[nen]{thm-nonenum-pownat}. There we showed that for any
+  list $N_1$, $N_2$, \dots, of subsets of~$\Nat$ we can construct a
+  set~$D$ of numbers guaranteed not to be on the list. It
+  was guaranteed not to be on the list because $n \in N_n$ iff $n \notin D$, for every $n \in
+  \Nat$. We follow the same idea here,
+  except the indices~$n$ are now !!{element}s of~$A$ rather than
+  of~$\Nat$. The set $D$ is defined so that it is
+  different from~$g(x)$ for each $x \in A$, because $x \in g(x)$ iff
+  $x \notin D$. %Again, there is always !!a{element} of~$X$
+%  which is !!a{element} of one of $g(x)$ and $D$ but not the other. 
+  
+  The proof is also worth comparing with the proof of Russell's Paradox, \olref[sfr][set][rus]{RussellsParadox}. Indeed, Cantor's Theorem was the inspiration for Russell's own paradox.
+\end{explain}
+
+%\begin{prob}
+%  Show that there cannot be !!a{injection} $g\colon \Pow(X) \to
+%  X$, for any set $X$. Hint: Suppose $g\colon \wp(X) \to X$ is
+%  !!{injective}. Then for each $x \in X$ there is at most one $Y \subseteq
+%  X$ such that $g(Y) = x$. Define a set $\overline{Y}$ such that for
+%  every $x \in X$, $g(\overline{Y}) \neq x$.
+%\end{prob}
+
+\end{document}

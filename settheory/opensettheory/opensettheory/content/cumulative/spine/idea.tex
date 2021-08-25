@@ -1,0 +1,18 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+	\olfileid{sfr}{spine}{valpha}
+	\olsection{Defining the stages as the $V_\alpha$s}\ollabel{valpha}
+In \olref[sfr][ordinals][ord-opps]{ord-opps}, we defined the idea of successor and limit ordinals. Our aim is to use these ideas in following definition:
+\begin{defn}\ollabel{defValphas}
+	\begin{align*}
+	V_\emptyset &:= \emptyset\\
+	V_{\ordsucc{\alpha}} &:= \Pow{V_\alpha} & & \text{for any ordinal }\alpha\\
+	V_{\alpha} &:= \bigcup_{\gamma < \alpha} V_\alpha & & \text{when }\alpha\text{ is a limit ordinal}
+\end{align*}
+\end{defn}\noindent
+This will be a definition by \emph{transfinite recursion} on the ordinals. In this regard, we should compare this with recursive definitions of functions on the natural numbers.\footnote{Cf.\ the definitinos of addition, multiplication, and exponentiation in  \olref[sfr][infinite][dedekind]{dedekind}.} As when dealing with natural numbers, one defines a base case and successor cases; but when dealing with ordinals, we also need to describe the behaviour of \emph{limit} cases. 
+
+This definition of the $V_\alpha$s will be an important milestone. We have informally motivated our hierarchy of sets as forming sets by \emph{stages}. The $V_\alpha$s are, in effect, just those stages. Importantly, though, this is an \emph{internal} characterisation of the stages. Rather than suggesting a possible \emph{model} of the theory, we will have defined the stages \emph{within} our set theory.
+
+\end{document}

@@ -1,0 +1,81 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: composition
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+
+\begin{document}
+
+\olfileid{sfr}{fun}{cmp}
+\olsection{Composition of Functions}
+
+\begin{explain}
+We just saw that the inverse~$f^{-1}$ of !!a{bijection}~$f$ is itself a function. We now move on to the analogue of relative products (see \olref[sfr][rel][ops]{relationoperations}). 
+
+In particular, it possible to define a function by composing
+two functions, $f$ and~$g$, i.e.\ by first applying $f$
+and then $g$. Of course, this is only possible if the ranges and
+domains match, i.e., the range of~$f$ must be a subset of the
+domain of~$g$.
+
+	This diagram might help to explain the idea of composition. Here, we depict two functions $f \colon A \to B$ and $g \colon B \to C$:
+\begin{center}
+	%  \centering
+	\begin{tikzpicture}[blob/.style={fill=black, circle, minimum width=5pt, inner sep=1pt},every fit/.style={ellipse,draw,inner sep=-2pt}]
+	\node[blob] (a2) at (0,3.5) {};    %
+	\node[blob] (a3) at (0,2.5) {};%
+	\node[blob] (a4) at (0,1.5) {};%
+	\node[blob] (b2) at (4,3) {};%
+	\node[blob] (b4) at (4,2) {};
+	\node[blob] (c1) at (8,4) {};%
+	\node[blob] (c2) at (8,3) {};
+	\node[blob] (c3) at (8,2) {};%
+	\node[blob] (c4) at (8,1) {};
+	\node[draw,fit= (a2) (a3) (a4),minimum width=2cm] {} ;%
+	\node[draw,fit= (b2) (b4),minimum width=2cm] {} ;
+	\node[draw,fit= (c1) (c2) (c3) (c4),minimum width=2cm] {} ;
+	\draw[->,thick,shorten <=2pt,shorten >=2] (a2) -- (b2);
+	\draw[->,thick,shorten <=2pt,shorten >=2] (a3) -- (b2);
+	\draw[->,thick,shorten <=2pt,shorten >=2] (a4) -- (b4);
+	\draw[->,thick,shorten <=2pt,shorten >=2] (b2) -- (c1);
+	\draw[->,thick,shorten <=2pt,shorten >=2] (b4) -- (c4);
+	\draw[->,dashed,shorten <=2pt,shorten >=2] (a2) -- (c1);
+	\draw[->,dashed,shorten <=2pt,shorten >=2] (a3) -- (c1);
+	\draw[->,dashed,shorten <=2pt,shorten >=2, bend right] (a4) -- (c4);
+	\end{tikzpicture}
+	% \caption{The composition $\comp{f}{g}$ of two functions $f$ and~$g$.}
+\end{center}
+	The function $(\comp{f}{g}) \colon A \to C$ then pairs each !!{element} of
+	$A$ with !!a{element} of~$C$. We specify which !!{element} of $C$ !!a{element} of
+	$A$ is paired with as follows: given an input $x \in A$, first apply
+	the function $f$ to~$x$, which will output some $f(x) = y \in B$, then apply
+	the function $g$ to~$y$, which will output some $g(f(x)) = g(y) = z \in C$. Let us give this a rigorous definition.
+\end{explain}
+\begin{defn}[Composition]
+Let $f\colon A \to B$ and $g\colon B \to C$ be functions. The \emph{composition} of
+$f$ with $g$ is $\comp{f}{g} \colon A \to C$,
+where $(\comp{f}{g})(x) = g(f(x))$.
+\end{defn}
+
+\begin{ex}
+Consider the functions $f(x) = x + 1$, and $g(x) = 2x$. Since $(\comp{f}{g})(x) = g(f(x))$, for each input $x$ you must first take its successor, then multiply the result by two. So their composition
+is given by $(\comp{f}{g})(x) = 2(x+1)$.
+\end{ex}
+
+\begin{prob}
+Show that if $f \colon X \to Y$ and $g \colon Y \to Z$ are both
+!!{injective}, then $\comp{f}{g}\colon X \to Z$ is !!{injective}.
+\end{prob}
+
+\begin{prob}
+Show that if $f \colon X \to Y$ and $g \colon Y \to Z$ are both
+!!{surjective}, then $\comp{f}{g}\colon X \to Z$ is !!{surjective}.
+\end{prob}
+
+\begin{prob}
+	Suppose $f \colon X \to Y$ and $g \colon Y \to Z$. Show that the graph
+	of $\comp{f}{g}$ is $R_f \mid R_g$.
+\end{prob}
+
+\end{document}

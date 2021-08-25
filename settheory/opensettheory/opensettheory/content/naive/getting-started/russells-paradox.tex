@@ -1,0 +1,30 @@
+% Part: sets-functions-relations
+% Chapter: sets
+% Section: russells-paradox
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{set}{rus}
+\olsection{Russell's Paradox}\ollabel{rus}
+\begin{explain}
+In \olref[sfr][set][bas]{bas}, we said that Extensionality licenses the notation $\Setabs{x}{\phi(x)}$, for \emph{the} set of $x$'s such that $\phi(x)$. However, all that Extensionality \emph{really} licenses is the following thought. \emph{If} there is a set whose members are all and only the $\phi$'s, \emph{then} there is only one such set. Otherwise put: having fixed some $\phi$, the set $\Setabs{x}{\phi(x)}$ is unique, \emph{if it exists}.
+
+But this conditional is important\bang{} Crucially, not every property lends itself to \emph{comprehension}. That is, some  properties do \emph{not} define sets. If they all did, then we would run into
+outright contradictions. The most famous example of this is Russell's
+Paradox. This arises from considering the property of \emph{being non-self-membered}. Provably, there is no set whose members are all only the non-self-membered sets:
+\end{explain}
+\begin{thm}[Russell's Paradox]\ollabel{RussellsParadox}
+	There is no set $R = \Setabs{x}{x \notin x}$
+\end{thm}
+\begin{proof}
+	For reductio, suppose that $R = \Setabs{x}{x \notin x}$ exists. Then $R \in R$ iff $R \notin R$, since sets are extensional. Contradiction\bang
+\end{proof}
+\begin{explain}
+So: \emph{how} do we set up a set theory which avoids falling into Russell's Paradox, i.e.\ which avoids making the \emph{inconsistent} claim that $R = \Setabs{x}{x \notin x}$ exists? Well, we would need to lay down axioms which give us very precise conditions for stating when sets exist (and when they don't). 
+	
+The set theory sketched in this chapter---and, indeed, used throughout Part \ref{part:Naive}---doesn't do this. It's \emph{genuinely na\"ive}. It tells you only that sets obey Extensionality and that, if you have some sets, you can form their union, intersection, etc. We will ultimately demand more rigour than this. But that rigour will be reserved for Part \ref{part:Cumulative}. For now, we will proceed na\"ively, and carefully try to sidestep contradictions.  
+\end{explain}
+
+\end{document}

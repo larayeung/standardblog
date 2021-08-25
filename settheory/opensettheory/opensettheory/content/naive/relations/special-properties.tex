@@ -1,0 +1,102 @@
+% Part: sets-functions-relations
+% Chapter: relations
+% Section: special-properties
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{rel}{prp}
+\olsection{Special Properties of Relations}
+
+\begin{intro}
+Some kinds of relations turn out to be so common that they have been
+given special names.  For instance, $\le$ and $\subseteq$ both relate
+their respective domains (say, $\Nat$ in the case of $\le$ and
+$\Pow{X}$ in the case of $\subseteq$) in similar ways.  To get at
+exactly how these relations are similar, and how they differ, we
+categorize them according to some special properties that relations
+can have.  It turns out that (combinations of) some of these special
+properties are especially important: orders and equivalence relations.
+\end{intro}
+
+\begin{defn}[Reflexivity]
+A relation $R \subseteq X^2$ is \emph{reflexive} iff, for every $x \in
+X$, $Rxx$.
+\end{defn}
+
+\begin{defn}[Transitivity]
+A relation $R \subseteq X^2$ is \emph{transitive} iff, whenever $Rxy$
+and $Ryz$, then also $Rxz$.
+\end{defn}
+
+\begin{defn}[Symmetry]
+A relation~$R \subseteq X^2$ is \emph{symmetric} iff, whenever
+$Rxy$, then also~$Ryx$.
+\end{defn}
+
+\begin{defn}[Anti-symmetry]
+A relation~$R \subseteq X^2$ is \emph{anti-symmetric} iff, whenever both
+$Rxy$ and $Ryx$, then $x=y$ (or, in other words: if $x\neq y$ then
+either $\lnot Rxy$ or $\lnot Ryx$).
+\end{defn}
+
+\begin{explain}
+In a symmetric relation, $Rxy$ and $Ryx$ always hold together, or
+neither holds.  In an anti-symmetric relation, the only way for $Rxy$
+and $Ryx$ to hold together is if $x = y$.  Note that this does not
+\emph{require} that $Rxy$ and $Ryx$ holds when $x = y$, only that it
+isn't ruled out.  So an anti-symmetric relation can be reflexive, but
+it is not the case that every anti-symmetric relation is
+reflexive.  Also note that being anti-symmetric and merely not being
+symmetric are different conditions.  In fact, a relation can be both
+symmetric and anti-symmetric at the same time (e.g., the identity
+relation is).
+\end{explain}
+
+\begin{defn}[Connectivity]
+A relation $R \subseteq X^2$ is \emph{connected} if for all $x,y\in
+X$, if $x \neq y$, then either $Rxy$ or~$Ryx$.
+\end{defn}
+
+\begin{defn}[Partial order]
+A relation~$R \subseteq X^2$ that is reflexive, transitive, and
+anti-symmetric is called a \emph{partial order}. 
+\end{defn}
+
+\begin{defn}[Linear order]
+A partial order that is also connected is called a \emph{linear order}.
+\end{defn}
+
+\begin{defn}[Equivalence relation]
+A relation $R \subseteq X^2$ that is reflexive, symmetric, and
+transitive is called an \emph{equivalence relation}.
+\end{defn}\noindent
+\begin{prob}
+	Give examples of relations that are (a) reflexive and symmetric but
+	not transitive, (b) reflexive and anti-symmetric, (c) anti-symmetric,
+	transitive, but not reflexive, and (d) reflexive, symmetric, and
+	transitive.  Do not use relations on numbers or sets.
+\end{prob} 
+Equivalence relations give rise to the notion of an \emph{equivalence class}. An equivalence relation ``chunks up'' the domain into different partitions; within each partition, all the objects are related to one another; and no objects from different partitions relate to one another. Sometimes, it's helpful just to talk about these partitions \emph{directly}. To that end, we introduce a definition:
+\begin{defn}\ollabel{defequivalenceclass}
+	Let $R \subseteq X^2$ be an equivalence relation. For each $a \in X$, the \emph{equivalence class} of $a$ in $X$ is the set $\equivrep{a}{R} = \Setabs{x \in X}{Rax}$. The \emph{quotient} of $X$ under $R$, is $\equivclass{X}{R} = \Setabs{\equivrep{a}{R}}{a \in X}$, i.e.\ the set of these equivalence classes.
+\end{defn}\noindent
+This next result vindicates the definition of an equivalence class, in proving that the equivalence classes are indeed the partitions of $X$:
+\begin{prop}
+ 	If $R \subseteq X^2$ is an equivalence relation, then $Rab$ iff $\equivrep{a}{R} = \equivrep{b}{R}$.
+ \end{prop}
+\begin{proof}
+	\emph{Left to right.} Suppose $Rab$, and let $c \in \equivrep{a}{R}$. By definition, then, $Rac$. Since $R$ is an equivalence relation, $Rbc$. (Spelling this out: as $Rab$ and $R$ is symmetric we have $Rba$, and as $Rac$ and $R$ is transitive we have $Rbc$.) So $c \in \equivrep{b}{R}$. Generalising, $\equivrep{a}{R} \subseteq \equivrep{b}{R}$. But exactly similarly, $\equivrep{b}{R} \subseteq \equivrep{a}{R}$. So $\equivrep{a}{R} = \equivrep{b}{R}$, by Extensionality.
+	
+	\emph{Right to left.} Suppose $\equivrep{a}{R} = \equivrep{b}{R}$. Since $R$ is symmetric, $Rbb$, so $b \in \equivrep{b}{R}$. So $b \in \equivrep{a}{R}$. So $Rab$.
+\end{proof}
+\begin{ex}
+	 A nice example of equivalence relations comes from modular arithmetic. For any $a, b, n \in \Nat$, say that $a \equiv_n b$ iff dividing $a$ by $n$ gives remainder $b$. (Somewhat more symbolically: $a \equiv_n b$ iff $(\exists k \in \Nat)a -b = kn$.) Now, $\equiv_n$ is an equivalence relation, for any $n$. And there are exactly $n$ distinct equivalence classes generated by $\equiv_n$; that is, $\equivclass{\Nat}{\equiv_n}$ has $n$ !!{element}s. These are: the set of numbers divisible by $n$ without remainder, i.e.\ $\equivrep{0}{\equiv_n}$; the set of numbers divisible by $n$ with remainder $1$, i.e.\ $\equivrep{1}{\equiv_n}$; \ldots; and the set of numbers divisible by $n$ with remainder $n-1$, i.e.\ $\equivrep{n-1}{\equiv_n}$. 
+\end{ex}
+\begin{prob}
+	Show that $\equiv_n$ is an equivalence relation, for any $n \in \Nat$, and that $\equivclass{\Nat}{\mod_n}$ has exactly $n$ members.
+\end{prob}
+
+
+\end{document}

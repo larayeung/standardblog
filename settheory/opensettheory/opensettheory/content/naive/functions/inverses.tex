@@ -1,0 +1,76 @@
+% Part: sets-functions-relations
+% Chapter: functions
+% Section: inverses
+%
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sfr}{fun}{inv}
+\olsection{Inverses of Functions}
+
+\begin{explain}
+We think of functions as maps. An obvious question to ask about functions, then, is whether the mapping can be
+``reversed.'' For instance, the successor function $f(x) = x + 1$ can
+be reversed, in the sense that the function $g(y) = y - 1$ ``undoes''
+what $f$ does. 
+
+But we must be careful. Although the definition of $g$
+defines a function $\Int \to \Int$, it does not define a \emph{function}
+$\Nat \to \Nat$, as as $g(0) \notin \Nat$.  So even in simple cases, it is
+not quite obvious if functions can be reversed; it may depend
+on the domain and codomain.  
+
+Let's make this more precise. First, we define the notion of an inverse:
+\end{explain}
+
+\begin{defn}
+A function $g \colon Y \to X$ is an \emph{inverse} of a function $f
+\colon X \to Y$ iff $f(g(y)) = y$ and $g(f(x)) = x$ for all $x \in X$
+and $y \in Y$.
+\end{defn}
+\begin{explain}
+Now we will determine when functions have inverses. A good candidate for an inverse of
+$f\colon X \to Y$ is $g\colon Y \to X$ ``defined by''
+\[
+g(y) = \text{``the'' $x$ such that $f(x) = y$.}
+\]
+But the scare quotes around ``defined by'' (and ``the'') suggest that this is not a
+definition.  At least, it will not always work, with complete generality. For, in order for this
+definition to specify a function, there has to be one and only one~$x$
+such that $f(x) = y$---the output of $g$ has to be uniquely specified.
+Moreover, it has to be specified for every $y \in Y$.  If there are
+$x_1$ and $x_2 \in X$ with $x_1 \neq x_2$ but $f(x_1) = f(x_2)$, then
+$g(y)$ would not be uniquely specified for $y = f(x_1) = f(x_2)$. And
+if there is no $x$ at all such that $f(x) = y$, then $g(y)$ is not
+specified at all.  In other words, for $g$ to be defined, $f$ must be both !!{injective} and !!{surjective}.
+\end{explain}
+\begin{prop}\ollabel{bijectioninverse}
+	Every !!{bijection} has a unique inverse.
+\end{prop}
+\begin{proof}
+Exercise.
+\end{proof}
+\begin{explain}
+	However, there is a slightly more general way to extract inverses. We saw in \olref[sfr][fun][kin]{kin} that every function $f$ induces !!a{surjection} $f' \colon A \to \ran{f}$ by letting $f'(x) = f(x)$ for all $x \in A$. Clearly, if $f$ is !!a{injection}, then $f'$ is !!a{bijection}, so that it has a unique inverse by \olref{bijectioninverse}. By a very minor abuse of notation, we sometimes call the inverse of $f'$ simply ``the inverse of $f$''.
+\end{explain}
+
+\begin{prob}
+Show that if $f$ is bijective, an inverse $g$ of $f$ exists, i.e.,
+define such a $g$, show that it is a function, and show that it is an
+inverse of~$f$, i.e., $f(g(y)) = y$ and $g(f(x)) = x$ for all $x \in
+X$ and $y \in Y$.
+\end{prob}
+
+\begin{prob}
+Show that if $f\colon X \to Y$ has an inverse~$g$, then $f$ is
+!!{bijective}.
+\end{prob}
+
+\begin{prob}
+Show that if $g\colon Y \to X$ and $g'\colon Y \to X$ are inverses
+of~$f\colon X \to Y$, then $g = g'$, i.e., for all $y \in Y$, $g(y) =
+g'(y)$.
+\end{prob}
+%
+\end{document}
