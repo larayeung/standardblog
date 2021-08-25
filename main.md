@@ -67,5 +67,16 @@ there are a few strategies that we'll avoid off the bat:
 
 Skimming it from front to back seems useless. Math is heavily based on mastery, and we will quickly not comprehend anything that goes on within a chapter or so.
 I remember when we self-studied for something like AP Human in a weekend, which basically involved rereading the book multiple times and highlighting a bunch of stuff. Each time we re-read, we understood a little bit more. I don't think this will work for math.
-    
+
+(terry) What i think is a good idea, then, is to read the textbook [chapter-by-chapter](http://builds.openlogicproject.org/courses/set-theory/settheory-screen.pdf) chapter by chapter... maybe even section-by-section
+
+After skimming each section, work on ankifying the components of each textbook. 
+
+That process is basically
+
+1. getting the section into a plain textfile, through typing or copy-pasting
+2. separating that section into individual note-sized chunks (by the anki definition of notes)
+3. cloze-ifying each note
+4. importing the file into anki
+
 
