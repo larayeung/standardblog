@@ -1,6 +1,6 @@
 Okay, so let's take some notes
 
-###2021-08-24
+### 2021-08-24
 
 Let's start with chapter one, section one
 
