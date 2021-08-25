@@ -57,3 +57,15 @@ notion is slow and it pisses me off.
 i want to export my notion blog to github. not sure how that would work.
 
 
+### learning math by starting with set theory
+
+the only thing that all six of us can agree on is that algebra sucks and learning set theory seems fun. i mean, at least one of us *knows* algebra but the other five don't want to learn math through that.
+
+so, we want to be able to take something like [this](http://builds.openlogicproject.org/courses/set-theory/) and internalize it through anki.
+
+there are a few strategies that we'll avoid off the bat:
+
+Skimming it from front to back seems useless. Math is heavily based on mastery, and we will quickly not comprehend anything that goes on within a chapter or so.
+I remember when we self-studied for something like AP Human in a weekend, which basically involved rereading the book multiple times and highlighting a bunch of stuff. Each time we re-read, we understood a little bit more. I don't think this will work for math.
+    
+
