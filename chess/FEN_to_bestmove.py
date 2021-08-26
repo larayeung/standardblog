@@ -1,3 +1,6 @@
+from stockfish import Stockfish
+import time
+
 FENs = [
         'rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/3B1N2/PPP2PPP/RNBQ1RK1 b kq - 3 5',
         'rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/2PB1N2/PP3PPP/RNBQK2R b KQkq - 0 5',
@@ -86,16 +89,21 @@ FENs = [
         'rnbqk1nr/ppppppbp/6p1/8/3PP1P1/8/PPP2P1P/RNBQKBNR b KQkq - 0 3'
 ]
 
-from stockfish import Stockfish
-
 stockfish = Stockfish("/root/stockfishengine/stockfish_14_x64_avx2")
 
 stockfish = Stockfish(parameters={"Threads":14,"Hash": 65336,"Write Debug Log": "true"})
 
 print(stockfish.get_parameters())
 
-stockfish.set_depth(40)
+stockfish.set_depth(45)
+
+localtime = time.localtime()
+result = time.strftime("%I:%M:%S %p", localtime)
+print(result)
 
 for FEN in FENs:
     stockfish.set_fen_position(FEN)
     print(stockfish.get_best_move())
+    localtime = time.localtime()
+    result = time.strftime("%I:%M:%S %p", localtime)
+    print(result)
