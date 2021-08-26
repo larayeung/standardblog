@@ -85,7 +85,7 @@ PGNs = [
         '1. e4 g6 2. g4 Bg7 3. g5',
         '1. e4 g6 2. g4 Bg7 3. Bg2',
         '1. e4 g6 2. g4 Bg7 3. h4',
-        '1. e4 g6 2. g4 Bg7 3. d4',
+        '1. e4 g6 2. g4 Bg7 3. d4'
         ]
 
 import io
