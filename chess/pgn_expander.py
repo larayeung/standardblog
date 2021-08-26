@@ -4,6 +4,8 @@
 
 #let's say we want to count how many more moves on that PGN tree result in positions that occur at least 10,000 times
 
+#http://talkchess.com/forum3/viewtopic.php?t=61695
+
 #the pgn tree can be converted into an array of FEN codes
 
 #... with some code, of course
