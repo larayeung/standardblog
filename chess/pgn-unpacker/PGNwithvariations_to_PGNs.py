@@ -1,7 +1,12 @@
+import chess
+import sys
 
-#open the PGN file 
+data_folder = sys.path[0]
+file_to_open = data_folder + "\ModernDefense-Black.pgn"
 
-while True:
+reportoirePGN = open(file_to_open)
+
+#while True:
      #print pgn
      #if not last node on branch:
          #step forward
