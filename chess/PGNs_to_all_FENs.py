@@ -1,5 +1,6 @@
 import io
 import chess.pgn
+from time import sleep
 
 white_to_move_FENs = []
 black_to_move_FENs = []
@@ -146,8 +147,16 @@ PGNs = [
 
 
 for pgn in PGNs:
-    #open the pgn file
-    #for move in pgn
+    print(pgn)
+    sleep(.1)
+    game = chess.pgn.read_game(io.StringIO(pgn))
+    board = game.board()
+    
+    #for move in game.mainline_moves():
+        #board.push(move)
+        
+        #board.turn
+        #board.fen()
         #append the FEN to either white_to_move or black_to_move_FENs
         
 #delete duplicates
