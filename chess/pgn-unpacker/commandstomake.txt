@@ -24,3 +24,6 @@ replace with: \n
 
 find: ^(.*)
 replace with: "\1",
+
+
+this code isn't actually perfect and is a lazy stopgap measure.
