@@ -126,20 +126,39 @@ PGNs = [
         "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bd3 Nc6 5. d5 Ne5 * "
         ]
 
+whitetomovehandle = open("white_to_move_FENs.txt", "w")
+blacktomovehandle = open("black_to_move_FENs.txt", "w")
 
-counter = 8
+#counter = 8
 for pgn in PGNs:
-    print(str(counter) + ": " + pgn)
-    counter += 1
-    sleep(.02)
+    #print(str(counter) + ": " + pgn)
+    #counter += 1
+    #sleep(0.5)
+    
     game = chess.pgn.read_game(io.StringIO(pgn))
     board = game.board()
     
-    #for move in game.mainline_moves():
-        #board.push(move)
+    for move in game.mainline_moves():
+        board.push(move)
+        #print(type(board.fen()))
+        white_to_move = board.turn
         
-        #board.turn
-        #board.fen()
-        #append the FEN to either white_to_move or black_to_move_FENs
-        
-#delete duplicates
+        if white_to_move == True:
+            if board.fen() not in white_to_move_FENs:
+                white_to_move_FENs.append(board.fen())
+                whitetomovehandle.write(pgn + \
+                                        "\t" + \
+                                        board.fen() + \
+                                        "\n")
+            else:
+                pass
+        else: 
+            if board.fen() not in black_to_move_FENs:
+                black_to_move_FENs.append(board.fen())
+                blacktomovehandle.write(pgn + \
+                                        "\t" + \
+                                        board.fen() + \
+                                        "\n")
+
+            else:
+                pass

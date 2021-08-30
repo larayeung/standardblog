@@ -1,2 +1,6 @@
 
 chess/pgn-unpacker/1.pgn
+chess/PGNs_to_all_FENs/black_to_move_FENs.txt
+chess/PGNs_to_all_FENs/white_to_move_FENs.txt
+chess/PGNs_to_bestmove/black_to_move_FENs.txt
+chess/PGNs_to_bestmove/white_to_move_FENs.txt
