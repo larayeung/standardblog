@@ -1,1 +1,0 @@
-what do we have to do manually? go through each chess game we've played, figure out the latest move that wasn't already integrated into our reportoire, and produce PGNs with common responses by the opponent
