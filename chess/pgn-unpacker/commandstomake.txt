@@ -1,0 +1,6 @@
+pgn-extract.exe --splitvariants -#1 ModernDefense-Black.pgn
+
+once you have the file, you can do this in notepad++:
+
+find (without the period matching a newline): (^1\..*)\r\n 
+replace with: \1
