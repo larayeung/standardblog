@@ -4,3 +4,5 @@ chess/PGNs_to_all_FENs/black_to_move_FENs.txt
 chess/PGNs_to_all_FENs/white_to_move_FENs.txt
 chess/PGNs_to_bestmove/black_to_move_FENs.txt
 chess/PGNs_to_bestmove/white_to_move_FENs.txt
+chess/pgn-unpacker/ModernDefense-Black.pgn
+chess/pgn-unpacker/Reti-White.pgn
