@@ -1,20 +1,25 @@
 this is a list of things that we did on the vultr barebones server that we got to use for free because we got like $200 in credits
 
-sudo apt-get update && sudo apt-get upgrade
+`sudo apt-get update && sudo apt-get -y upgrade`
+
 python 3 should already be installed
-apt install python3-pip
-pip install stockfish
 
+`apt install python3-pip`
+`pip install stockfish`
 
+```
 apt install unzip
-
 wget https://stockfishchess.org/files/stockfish_14_linux_x64_avx2.zip
-unzip stockfish-10-linux.zip
-chmod +x stockfish-10-linux/Linux/stockfish_10_x64
-./stockfish-10-linux/Linux/stockfish_10_x64
+unzip stockfish_14_linux_x64_avx2.zip
+```
 
-start the python3 console with python3
+you're going to want to clone the git repository and then run scripts that keep running after putty closes.
+```
+git clone
+nohup pythonScript.py > outfile
+```
 
+### Stockfish Calibration
 
 from stockfish import Stockfish
 
