@@ -338,7 +338,7 @@ to_consolidate = {}
 for fen in to_analyze:
     stockfish.set_fen_position(fen)
     
-    best_move_uci = stockfish.get_best_move())
+    best_move_uci = stockfish.get_best_move()
     localtime = time.localtime()
     result = time.strftime("%I:%M:%S %p", localtime)
     
