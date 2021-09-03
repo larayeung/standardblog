@@ -111,4 +111,4 @@ else:
     filename = "white_reportoire.pgn"
 
 with open(filename, "w") as f:
-    f.write(str(masternode))
+    f.write(str(master_node))
