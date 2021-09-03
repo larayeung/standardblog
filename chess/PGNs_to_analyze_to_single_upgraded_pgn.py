@@ -10,6 +10,18 @@ with open('to_analyze.pickle', 'rb') as handle:
 
 doing_black_reportoire = True
 
+to_analyze_temp = {}
+counter = 0
+for fen in to_analyze:
+    if counter == 20:
+        break
+    else:
+        continue
+        
+    to_analyze_temp[fen] = to_analyze[fen]
+
+to_analyze = to_analyze_temp
+
 stockfish = Stockfish("/root/stockfishengine/stockfish_14_x64_avx2")
 
 stockfish = Stockfish(parameters={"Threads":15,"Hash": 104537,"Write Debug Log": "true"})
