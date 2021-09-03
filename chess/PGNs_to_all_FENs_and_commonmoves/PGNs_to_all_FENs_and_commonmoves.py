@@ -233,18 +233,18 @@ def get_pgn_from_moves(moves):
     return pgn
 
 def get_pgn_from_moves_plus_uci(pgn,uci_move):
-    print(pgn)
     game = chess.pgn.read_game(io.StringIO(pgn))
     board = game.board()
     
-    current_moves = []
     for move in game.mainline_moves():
         current_moves.append(board.san(move))
         board.push(move)
-    board.push(uci_move)
-    current_moves.append(board.san(move))
+    board.push((chess.Move.from_uci(uci_move)))
+
+    game2 = chess.pgn.read_game(io.StringIO(pgn))
+    game2.end().add_variation(chess.Move.from_uci(uci_move))
     
-    return (get_pgn_from_moves(current_moves), board)
+    return (str(game2[-1]), board.fen())
 
 def move_already_included(uci_move,fen,someFENs):
 
@@ -267,24 +267,17 @@ for pgn in PGNs:
     
     current_moves = []
     
-    print(pgn)
     for move in game.mainline_moves():
         current_moves.append(board.san(move))
-        print(board.san(move))
         board.push(move)
         
         white_to_move = board.turn
         
-        print("assignin")
         if white_to_move == True:
             black_to_move_FENs[get_pgn_from_moves(current_moves)] = {'fen': board.fen(),'move list' : current_moves}
         else:
             white_to_move_FENs[get_pgn_from_moves(current_moves)] = {'fen': board.fen(),'move list' : current_moves}
-        
-        if get_pgn_from_moves(current_moves) == "": sys.exit()
-
-print(white_to_move_FENs)
-print(black_to_move_FENs)             
+         
 
 if doing_black_reportoire == True:
     FENs = white_to_move_FENs
@@ -317,6 +310,8 @@ for pgn in FENs:
         else:
             pgn_to_analyze, fen_to_analyze = get_pgn_from_moves_plus_uci(pgn,common_move)
             to_analyze[fen_to_analyze] = pgn_to_analyze
+            
+            print(pgn_to_analyze + " : " + fen_to_analyze)
             pass
 
 #coming into this, you should be having a dictionary with:

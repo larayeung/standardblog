@@ -1,10 +1,10 @@
 so, we start off with using pgn-extract in pgn-unpacker which splits up a PGN file into individual PGNS
 
-PGNs_to_all_FENs_and_commonmoves.py takes those PGNS and produces FENS. remember that if you're processing stuff for black, like the modern defense, then the useful output will be... (if white_to_move == True)
+PGNs_to_all_FENs_and_commonmoves.py takes those PGNS and produces FENS. remember that if you're processing stuff for black, like the modern defense, doing_black_reportoire = True
 
-PGNs_to_commonmoves.py takes these lists of FENs and produces a list of common moves with unique FENs
 
-those common moves then need to be plugged in to FEN_to_bestmove.py
+
+it produces a dictionary of PGNs and FENs that we're going to plug into FEN_to_bestmove.py
 
 ...and then we use chesslines_with_ucibestmove_to_single_pgn.py to create a single PGN that we can import.
 
