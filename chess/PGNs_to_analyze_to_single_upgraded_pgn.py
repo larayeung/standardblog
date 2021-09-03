@@ -14,7 +14,7 @@ stockfish = Stockfish(parameters={"Threads":15,"Hash": 104537,"Write Debug Log":
 
 print(stockfish.get_parameters())
 
-stockfish.set_depth(40)
+stockfish.set_depth(1)
 
 localtime = time.localtime()
 result = time.strftime("%I:%M:%S %p", localtime)
