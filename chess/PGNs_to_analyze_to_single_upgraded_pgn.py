@@ -6,7 +6,9 @@ from stockfish import Stockfish
 import time
 
 with open('to_analyze.pickle', 'rb') as handle:
-    to_analyze, doing_black_reportoire = pickle.load(handle)
+    to_analyze = pickle.load(handle)
+
+doing_black_reportoire = True
 
 stockfish = Stockfish("/root/stockfishengine/stockfish_14_x64_avx2")
 
