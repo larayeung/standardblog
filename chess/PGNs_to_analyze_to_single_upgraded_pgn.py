@@ -38,7 +38,7 @@ for fen in to_analyze:
                best_move_uci + "\t" + \
                result + "\n"
                
-    to_consolidate[pgn] = str(best_move_uci)        
+    to_consolidate[to_analyze[fen]] = str(best_move_uci)        
     print(to_print)
     counter += 1
     if counter == 50: break
