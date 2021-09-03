@@ -1,8 +1,8 @@
 so, we start off with using pgn-extract in pgn-unpacker which splits up a PGN file into individual PGNS
 
-PGNs_to_all_FENs.py takes those PGNS and produces FENS. remember that if you're processing stuff for black, like the modern defense, then the useful output will be... whitetomove.txt as you're trying to find common responses to whatever your reportoire is
+PGNs_to_all_FENs_and_commonmoves.py takes those PGNS and produces FENS. remember that if you're processing stuff for black, like the modern defense, then the useful output will be... (if white_to_move == True)
 
-PGNs_to_commonmoves.py takes these lists of FENs and produces common moves
+PGNs_to_commonmoves.py takes these lists of FENs and produces a list of common moves with unique FENs
 
 those common moves then need to be plugged in to FEN_to_bestmove.py
 
