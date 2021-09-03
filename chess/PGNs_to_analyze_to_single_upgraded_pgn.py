@@ -24,6 +24,8 @@ result = time.strftime("%I:%M:%S %p", localtime)
 print(result)
 
 to_consolidate = {}
+
+counter = 0
 for fen in to_analyze:
     stockfish.set_fen_position(fen)
     
@@ -34,10 +36,12 @@ for fen in to_analyze:
     to_print = fen + "\t" + \
                to_analyze[fen] + "\t" + \
                best_move_uci + "\t" + \
-               result
+               result + "\n"
                
-    to_consolidate[fen] = str(best_move_uci)        
+    to_consolidate[pgn] = str(best_move_uci)        
     print(to_print)
+    counter += 1
+    if counter == 50: break
 
 '''
 the below code should take no more than a few minutes
