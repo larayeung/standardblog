@@ -26,4 +26,6 @@ find: ^(.*)
 replace with: "\1",
 
 
-this code isn't actually perfect and is a lazy stopgap measure.
+this code isn't actually perfect and is a lazy stopgap measure. 
+there's a notepad++ macro i have that does these steps, making it easy to do stuff.
+
