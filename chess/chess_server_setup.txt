@@ -1,4 +1,4 @@
-this is a list of things that we did on the vultr barebones server that we got to use for free as a result of a setupo
+this is a list of things that we did on the vultr barebones server that we got to use for free because we got like $200 in credits
 
 sudo apt-get update && sudo apt-get upgrade
 python 3 should already be installed
