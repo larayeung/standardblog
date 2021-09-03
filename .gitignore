@@ -8,3 +8,5 @@ chess/pgn-unpacker/ModernDefense-Black.pgn
 chess/pgn-unpacker/Reti-White.pgn
 chess/PGNs_to_commonmove/white_to_move_FENs.txt
 chess/PGNs_to_commonmove/black_to_move_FENs.txt
+chess/pgn-unpacker/ModernDefenseBlack.pgn
+chess/pgn-unpacker/ModernDefense-Black.pgn
