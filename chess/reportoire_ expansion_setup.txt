@@ -7,3 +7,19 @@ PGNs_to_commonmoves.py takes these lists of FENs and produces common moves
 those common moves then need to be plugged in to FEN_to_bestmove.py
 
 ...and then we use chesslines_with_ucibestmove_to_single_pgn.py to create a single PGN that we can import.
+
+
+----
+
+To work backwards, let's say we want to expand your Modern Defense Reportoire (you're playing black)
+
+chess_lines_with_ucibestmove_to_single_pgn.py needs two things
+
+1. a pgn with black to move 
+2. a best move for black(in uci)
+
+now, how do we obtain (2)? FEN_to_bestmove.py, which needs
+
+(1a). FENs with black to move
+
+how do we obtain (1a)? plug in pgns with black to move.
