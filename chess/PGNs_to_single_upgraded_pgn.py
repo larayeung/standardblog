@@ -324,7 +324,7 @@ print("total number of position to analyze: " + str(number_of_unique_positions))
 
 stockfish = Stockfish("/root/stockfishengine/stockfish_14_x64_avx2")
 
-stockfish = Stockfish(parameters={"Threads":14,"Hash": 65336,"Write Debug Log": "true"})
+stockfish = Stockfish(parameters={"Threads":15,"Hash": 104537,"Write Debug Log": "true"})
 
 print(stockfish.get_parameters())
 
