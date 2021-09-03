@@ -17,7 +17,7 @@ stockfish = Stockfish(parameters={"Threads":15,"Hash": 104537,"Write Debug Log":
 print(stockfish.get_parameters())
 
 print("setting depth")
-stockfish.set_depth(1)
+stockfish.set_depth(40)
 
 localtime = time.localtime()
 result = time.strftime("%I:%M:%S %p", localtime)
@@ -25,7 +25,6 @@ print(result)
 
 to_consolidate = {}
 
-counter = 0
 for fen in to_analyze:
     stockfish.set_fen_position(fen)
     
@@ -40,8 +39,6 @@ for fen in to_analyze:
                
     to_consolidate[to_analyze[fen]] = str(best_move_uci)        
     print(to_print)
-    counter += 1
-    if counter == 50: break
 
 '''
 the below code should take no more than a few minutes
