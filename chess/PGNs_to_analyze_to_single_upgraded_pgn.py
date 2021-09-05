@@ -19,7 +19,11 @@ stockfish.set_depth(39)
 
 localtime = time.localtime()
 result = time.strftime("%I:%M:%S %p", localtime)
-print(result)
+print(str(result))
+
+with open('somefile.tsv', 'a') as the_file:
+    the_file.write(str(stockfish.get_parameters()))
+    the_file.write(result)
 
 to_consolidate = {}
 
@@ -37,6 +41,8 @@ for fen in to_analyze:
                
     to_consolidate[to_analyze[fen]] = str(best_move_uci)        
     print(to_print)
+    with open('somefile.tsv', 'a') as the_file:
+        the_file.write(to_print)
 
 '''
 the below code should take no more than a few minutes
