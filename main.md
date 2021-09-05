@@ -79,4 +79,16 @@ That process is basically
 3. cloze-ifying each note
 4. importing the file into anki
 
+### learning the game of go by cloning my python code
+
+after countless revisions, i finally have something that produces expansions to my chess reportoire for chesstempo dot com.
+
+i kind of want to do the same for go, except i'm starting from an empty reportoire.
+
+black: one in the center
+
+white: 
+
+white b, in case the first slot is taken already by black:  
+
 
