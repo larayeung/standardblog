@@ -272,6 +272,11 @@ else:
     FENs = black_to_move_FENs
     other_FENs = white_to_move_FENs
 
+other_FENs_list = []
+for pgn in other_FENs:
+    #print(other_FENs[pgn]['fen'])
+    other_FENs_list.append(other_FENs[pgn]['fen'])
+
 to_analyze = {} 
 number_of_unique_positions = 0   
 for pgn in FENs:
@@ -292,7 +297,7 @@ for pgn in FENs:
         common_move = item['uci']
         totalgames = item['white'] + item['black'] + item['draws']
         
-        if totalgames <= 10000 or move_already_included(common_move,fen,other_FENs) == True: 
+        if totalgames <= 10000 or move_already_included(common_move,fen,other_FENs_list) == True: 
             continue
         else:
             pgn_to_analyze, fen_to_analyze = get_pgn_from_moves_plus_uci(pgn,common_move)
