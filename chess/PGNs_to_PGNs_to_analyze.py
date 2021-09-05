@@ -257,11 +257,14 @@ for pgn in PGNs:
         white_to_move = board.turn
         
         if white_to_move == True:
-            black_to_move_FENs[get_pgn_from_moves(current_moves)] = {'fen': board.fen(),'move list' : current_moves}
-        else:
             white_to_move_FENs[get_pgn_from_moves(current_moves)] = {'fen': board.fen(),'move list' : current_moves}
+        else:
+            black_to_move_FENs[get_pgn_from_moves(current_moves)] = {'fen': board.fen(),'move list' : current_moves}
          
 
+#if you're doing the Modern Defense (black), you're going to want to find common responses
+#to what black is doing
+#so, FENs should be when white is to move as the code blocks below will find moves for white
 if doing_black_reportoire == True:
     FENs = white_to_move_FENs
     other_FENs = black_to_move_FENs
