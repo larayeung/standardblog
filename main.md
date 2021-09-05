@@ -91,4 +91,5 @@ white:
 
 white b, in case the first slot is taken already by black:  
 
+https://senseis.xmp.net/?GoDatabases
 
