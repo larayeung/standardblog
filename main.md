@@ -79,7 +79,7 @@ That process is basically
 3. cloze-ifying each note
 4. importing the file into anki
 
-### learning the game of go by cloning my python code
+### learning the game of go
 
 after countless revisions, i finally have something that produces expansions to my chess reportoire for chesstempo dot com.
 
@@ -93,3 +93,14 @@ white b, in case the first slot is taken already by black:
 
 https://senseis.xmp.net/?GoDatabases
 
+### learning the game of chess960
+
+so we have a list of all chess960 starting positions
+
+let's say we're playing as black:
+
+we need a list of the most common moves for white to play, calculate the optimal response
+
+if we play as white:
+
+we need a list of the most common moves for black to play, calculate the optimal move
