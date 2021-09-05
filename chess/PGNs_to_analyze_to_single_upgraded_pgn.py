@@ -6,18 +6,16 @@ from stockfish import Stockfish
 import time
 
 with open('to_analyze.pickle', 'rb') as handle:
-    to_analyze = pickle.load(handle)
-
-doing_black_reportoire = True
+    to_analyze, doing_black_reportoire = pickle.load(handle)
 
 stockfish = Stockfish("/root/stockfishengine/stockfish_14_x64_avx2")
 
-stockfish = Stockfish(parameters={"Threads":15,"Hash": 104537,"Write Debug Log": "true"})
+stockfish = Stockfish(parameters={"Threads":14,"Hash": 104537,"Write Debug Log": "true"})
 
 print(stockfish.get_parameters())
 
 print("setting depth")
-stockfish.set_depth(40)
+stockfish.set_depth(39)
 
 localtime = time.localtime()
 result = time.strftime("%I:%M:%S %p", localtime)
