@@ -1,10 +1,6 @@
-import io
-import chess.pgn
 from time import sleep
 import requests
-import sys
-import pickle
-import time
+import json 
 
 FENs = [
         "bbqnnrkr/pppppppp/8/8/8/8/PPPPPPPP/BBQNNRKR w KQkq - 0 1",
@@ -970,3 +966,28 @@ FENs = [
         ]
         
 chess960db = {}
+
+for fen in FENs:
+    sleep(1)
+    chess960db[fen] = {}
+    chess960db[fen]["white reportoires"] = []
+    url = "https://explorer.lichess.ovh/lichess?" + \
+          "variant=chess960&" + \
+          "speeds[]=blitz&speeds[]=rapid&speeds[]=classical&" + \
+          "ratings[]=1600&ratings[]=1800&ratings[]=2000&ratings[]=2200&ratings[]=2500&" + \
+          "recentGames=0&moves=20&topGames=0&fen=" + \
+          fen
+    r = requests.get(url)
+    print("\n" + "requesting: " + url + "\n")
+    dictResponse =  r.json()
+    
+    for item in dictResponse['moves']:
+        common_move = item['uci']
+        totalgames = item['white'] + item['black'] + item['draws']
+        
+        move = {"uci" : common_move}        
+        chess960db[fen]["white reportoires"].append(move)
+        print("\t" + common_move + " : " + fen)
+
+with open('chess960db.json', 'w') as fp:
+    json.dump(chess960db, fp)
