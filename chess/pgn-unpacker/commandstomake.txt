@@ -1,4 +1,4 @@
-pgn-extract.exe --splitvariants -#1 ModernDefense-Black.pgn
+pgn-extract.exe --splitvariants -#1 ModernDefenseBlack.pgn
 
 once you have the file, you can do this in notepad++:
 
