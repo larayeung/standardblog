@@ -975,18 +975,11 @@ stockfish = Stockfish(parameters={"Threads":14,"Hash": 104537,"Write Debug Log":
 print(stockfish.get_parameters())
 
 print("setting depth")
-stockfish.set_depth(39)
+stockfish.set_depth(30)
 
 localtime = time.localtime()
 result = time.strftime("%I:%M:%S %p", localtime)
 print(str(result))
-
->>> chess.Board()
-Board('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
->>> chess.BaseBoard()
-BaseBoard('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR')
->>>
-
 
 with open('chess960.tsv', 'a') as the_file:
     the_file.write(str(stockfish.get_parameters()))
@@ -1009,12 +1002,3 @@ for fen in FENs:
     print(to_print)
     with open('chess960.tsv', 'a') as the_file:
         the_file.write(to_print)
-
-'''
-the below code should take no more than a few minutes
-'''
-gamesPGN = []
-for pgn, bestresponse in to_consolidate.items():
-    game = chess.pgn.read_game(io.StringIO(pgn))
-    game.end().add_variation(chess.Move.from_uci(bestresponse))
-    gamesPGN.append(str(game[-1]))
