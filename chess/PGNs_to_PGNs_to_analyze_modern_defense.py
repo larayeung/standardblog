@@ -475,7 +475,7 @@ for pgn in FENs:
         common_move = item['uci']
         totalgames = item['white'] + item['black'] + item['draws']
         
-        if totalgames <= 5000 or move_already_included(common_move,fen,other_FENs_list) == True: 
+        if totalgames <= 10000 or move_already_included(common_move,fen,other_FENs_list) == True: 
             continue
         else:
             pgn_to_analyze, fen_to_analyze = get_pgn_from_moves_plus_uci(pgn,common_move)
@@ -489,6 +489,7 @@ print("total number of positions to analyze: " + str(number_of_unique_positions)
 with open('to_analyze.pickle', 'wb') as handle:
     pickle.dump((to_analyze,doing_black_reportoire), handle, protocol=pickle.HIGHEST_PROTOCOL)
 
+'''
 print("trimming pgns of stuff that actually doesn't have the modern defense...")
 new_to_analyze = {}
 for fen in to_analyze:
@@ -503,10 +504,7 @@ for fen in to_analyze:
 
 actual_number_of_unique_positions = len(new_to_analyze)
 print("actual number of positions to analyze: " + str(actual_number_of_unique_positions)) 
-
-
-with open('to_analyze.pickle', 'wb') as handle:
-    pickle.dump((new_to_analyze,doing_black_reportoire), handle, protocol=pickle.HIGHEST_PROTOCOL)
+'''
 
 sys.exit()
 
