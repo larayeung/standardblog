@@ -9,11 +9,11 @@ Government agencies with their own police forces get qualified immunity, and tha
 
 3) Picture this scenario:
 
- PPB spokesman Sgt. Kevin Allen says police received a call at 5:12 pm on Thursday. At 5:24 pm cops told strikers at 5:24 p.m to leave the disputed property.
+```PPB spokesman Sgt. Kevin Allen says police received a call at 5:12 pm on Thursday. At 5:24 pm cops told strikers at 5:24 p.m to leave the disputed property.
 
 These strikers leave because they don't want to be the victim of possibly-illegitimate uses of the government's monopoly on violence! Life would be much better if it read like:
 
- PPB spokesman Sgt. Kevin Allen says [armed] police received a call at 5:12 pm on Thursday. At 5:24 pm cops told strikers at 5:24 p.m to leave the disputed property. At 5:45 p.m. [Armed] federal agents from the Department of First Amendment Freedoms told the cops that their attempted enforcement was in violation of the constitution and told cops to leave the disputed property and to allow the strikers to continue protesting
+```PPB spokesman Sgt. Kevin Allen says [armed] police received a call at 5:12 pm on Thursday. At 5:24 pm cops told strikers at 5:24 p.m to leave the disputed property. At 5:45 p.m. [Armed] federal agents from the Department of First Amendment Freedoms told the cops that their attempted enforcement was in violation of the constitution and told cops to leave the disputed property and to allow the strikers to continue protesting
 
 4) We can model this "Department of Freedom" after successful agencies, specifically the Federal Reserve. Instead of banks, it'll be organizations like the ACLU, the AFL-CIO, and the Niskanen Institute.
 
