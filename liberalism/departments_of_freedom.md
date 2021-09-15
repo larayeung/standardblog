@@ -1,3 +1,6 @@
+the premise of this piece is basically, "you know how cops have qualified immunity? imagine if the ACLU had their own cops who also had qualified immunity!"
+
+
 Government agencies with their own police forces get qualified immunity, and that's why we should level the playing field by creating the Department of Labor Freedom.
 
 1) For whatever reason, the judicial system is very lenient on abuses of power by anyone granted an extension of the state's monopoly on violence.
