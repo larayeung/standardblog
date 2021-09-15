@@ -40,16 +40,26 @@ Gary Johnson
 ### Member organizations:
 
 The ACLU
+
 The EFF
+
 The GNU Project
+
 Niskanen Institute
+
 Progressive Policy Institute (donate here!)
 
+
 "the neoliberal wing of portland antifa"
+
 "RAICES"
+
 "the socially liberal wing of the boogaloo boys"
+
 "the Wu-Tang Clan"
+
 "alex nowrasteh"
+
 
 ### FAQ
 
