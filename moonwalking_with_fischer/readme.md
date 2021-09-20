@@ -46,7 +46,7 @@ We don't have to worry about worlds that are too small, because we can always ex
 
 That being said, we do know that openings have a lot of places of transposition.
 
-Currently, we know the Reti Opening and the Modern Defense.
+Currently, we know the [Reti Opening](reti_world.md) and the [Modern Defense](modern_defense_world). Describing the memory palaces of each place should probably happen in their own markdown files!
 
 ## People
 
