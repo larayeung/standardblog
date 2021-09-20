@@ -41,3 +41,15 @@ Your town holds houses, the houses contain rooms, the rooms contain cabinets wit
 For memory work this is easily implemented as memory palaces within palaces. I imagine a building as a root. In that are rooms with dressers, cabinets and doors to other rooms each of which might hold more mini palaces.```
 
 So, we can start off with one main memory palace!
+
+We don't have to worry about worlds that are too small, because we can always expand them.
+
+That being said, we do know that openings have a lot of places of transposition.
+
+Currently, we know the Reti Opening and the Modern Defense.
+
+## People
+
+## Actions
+
+## Objects
