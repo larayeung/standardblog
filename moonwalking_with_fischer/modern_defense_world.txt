@@ -1,0 +1,14 @@
+# The World
+
+Adobe's blog talked about [Nototo](https://xd.adobe.com/ideas/perspectives/interviews/ancient-art-memory-palace-exists-in-app-form/):
+
+> That said, Nototo’s maps don’t mirror a real atlas. Users draw the borders on their islands and populate the terrain with wayfinding cues of their choosing, drawn from a long menu of those aforementioned tree and building components. If someone wants to bundle a group of notes together, they can stack those on one island. If a new thought category arises, the user has to map out where it belongs—does it slot into an existing island? Or is it time to build a new one?
+
+On the highest level, we can have an entire globe to be our memory palace! There are a few universes that come to mind:
+
+1. Earth (this earth)
+2. Game of Thrones
+3. Pokemon
+
+Let's do the dark tower! We can create our own world around that tower as needed.
+
