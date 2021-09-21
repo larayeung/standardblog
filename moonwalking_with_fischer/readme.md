@@ -48,4 +48,13 @@ That being said, we do know that openings have a lot of places of transposition.
 
 Currently, we know the [Reti Opening](reti_world.md) and the [Modern Defense](modern_defense_world). Describing the memory palaces of each place should probably happen in their own markdown files!
 
-# Creating People, Actions, Objects
+# Copying the Millenium PAO system
+
+So there are a few different formats we can start off with.
+
+1. Algebraic notation Pairs
+2. UCI notation pairs
+
+let's say we do UCI notation pairs, like 'c2c4'
+
+there are 64 \* 64 combinations.
