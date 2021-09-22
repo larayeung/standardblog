@@ -57,4 +57,86 @@ So there are a few different formats we can start off with.
 
 let's say we do UCI notation pairs, like 'c2c4'
 
-there are 64 \* 64 combinations.
+there are 64 \* 64 (4096) combinations.
+
+a traditional PAO system would mean that we would need to come up with 4096 people, actions, objects!
+
+when you think about it, you really need to encode
+
+[a-h][1-8][a-h][1-8]
+
+## First things first
+
+Ultimately, using the [Millenium PAO system](https://memory-sports.com/millennium-pao/) requires an already-existing PAO system.
+
+The issue with using our old PAO system is that there's some mild PTSD associated with the time period from which we made that. Therefore, we're just going to construct our own
+
+### People
+
+**00 - 09:** House (1)
+	Gregory House
+	Lisa Cuddy
+	Lawrence Kutner
+	Allison Cameron
+	Robert Chase
+	Thirteen
+	James Wilson
+	Eric Foreman
+	Edward Volger
+	Chris Taub
+**10 - 19:** House (2)
+	Michael Tritter
+	Amber Volakis
+	Jessica Adams
+	Martha Masters
+	Rachel Taub
+	Chi Park
+	Stacy Warner
+	Lucas Douglas
+	Dominika Petrova
+	Rebecca Adler
+**20 - 29:** Veep (1)
+	Selina Meyer
+	Jonah Ryan
+	Dan Egan
+	Minna Hakkinen
+	Amy Brookheimer
+	Karen Collins
+	Roger Furlong
+	Gary Walsh
+	Mike McLintock
+	Danny Chung
+**30 - 39:** Veep (2)
+	Catherine Meyer
+	Jane McCabe
+	Kent Davidson
+	Jeff Kane
+	Sue Wilson
+	Andrew Doyle
+	Bill Ericsson
+	Ben Cafferty
+	Marjorie Palmiotti
+	Ben Caffrey
+**40 - 49:** Veep (3)
+	Richard Splett
+	Will (Furlong's assistant)
+	Candi Caruso
+	Laura Montez
+	Gen. George Maddox
+	Sidney Purcell
+	Leon West
+	Leigh Patterson
+	Michelle York
+	Keith Quinn
+
+ How I Met Your Mother
+ The Simpsons
+ Archer
+ South Park
+**50 - 59:** Stargate
+**60 - 69:** Star Trek (ToS)
+**70 - 79:** Star Trek TNG
+**80 - 89:** Rick and Morty
+**90 - 99:** Future Man
+
+In order to get to 4096
