@@ -49,7 +49,13 @@ External Readings:
 
 - [Jailed for missing school: the problem with truancy laws](https://reason.com/2015/06/06/jail-for-missed-days-at-school-the-madne/), [(backup link)](https://web.archive.org/web/20200523062706/https://www.overlawyered.com/2015/06/truancy/)
 
+### Consent
+
+Because of these truancy laws and because of the ABCUSD's willingness to enforce them, these public schools are prison-like. A student does not have many degrees of freedom to leave the institution, and so many are not in that institution by choice. In other words, the ABCUSD does not have a meaningful degree of consent.
+
 ## State-Level Policy
+
+California's two-party recording laws are unconstitutional on state grounds.
 
 ## Individual-Level Policy
 
@@ -69,6 +75,18 @@ There's a certain irony in using a quote by a sexual harasser to talk about prot
 
 To reiterate, this section (and document as a whole) is not advocating for violating human rights, the U.S. Constitution, or any laws that are violating the U.S. constitution.
 
+Very often, an administrator by the name of $!RS would call students into her office and verbally abuse them. It's important to understand the context of the office: students who make the reasonable choice to walk out of that office and ignore that verbal abuse can face repercussions and retaliation.
+
+Of course, reprimands like "You shouldn't have done this", "You broke this rule", "This person's feelings were hurt" are not verbal abuse. What $!RS has spewed to students is categorically different.
+
+It's difficult for a student to prove exactly what $!RS says behind closed doors. They *do* have an option to say something like, "Before we start this conversation, I want you to know that I am recording this and reserve the right to share this recording with the public." However, we live in a society where students are retaliated against for exercising their rights. It seems reasonable to argue that if $!RS were to know of this, she would retaliate in some other way.
+
+Of course, it is in violation of California's two-party recording laws. We argue
+
+## The Constitution
+
+The 
+
 # Meta
 
 ## Avoiding Takedowns
@@ -80,3 +98,7 @@ The ABCUSD has been known to engage in [underhanded and blatantly unethical tact
 ## Disclaimer 
 
 this document is not endorsed by the ABCUSD, and this section of the repository is merely an independently-produced handbook for ABCUSD students to protect themselves.
+
+## License
+
+The ABCUSD and Its Future © 2021 by Standard System is licensed under Attribution-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
