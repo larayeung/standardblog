@@ -85,6 +85,15 @@ There is a second option: not notifying the administrator at all! It is in viola
 
 We go further to argue that if $!RS were to ever attempt to sue a child for exercising their rights on the grounds of California's laws, it would be flouting the principles of truth, justice, and the American way. That is, trying to stop a child from being able to prove what $!RS (or any other administrator) says in that office is un-American.
 
+We reiterate three main reasons for this:
+
+1. The child already has a limited degree of consent in even *being* within that office, much less the institution.
+
+2. A recording device is a tool that simply allows someone to *prove* parts of their story.
+
+3. ABCUSD Administrators have broken the social contract over and over again by misrepresenting what is said in that office.
+
+4. It's the administrator that has the final say over the official report about what is said in that room. Disputing that official report after the fact is almost impossible without a recording device.
 
 ## The Constitution
 
