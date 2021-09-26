@@ -23,7 +23,7 @@ S
 
 L
 
-## Distict-Level Policy
+## District-Level Policy
 
 ### Truancy Enforcement
 
@@ -63,7 +63,7 @@ External Readings:
 
 > Yeah, I sure did. And it saved my ass. The incident was dropped. 
 
-- "The Good, Bad, and Completely Ridiculous in American Life", Bill O' Reilly
+  &mdash; "The Good, Bad, and Completely Ridiculous in American Life", Bill O' Reilly
 
 There's a certain irony in using a quote by a sexual harasser to talk about protecting students from harm. I argue that it's less ironic the more you dig down into it. School is supposed to prepare students for real life, and in real life, you sometimes have to cover your ass. In real life, it's a lot easier if you can prove what you did or didn't do.
 
