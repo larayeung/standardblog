@@ -124,3 +124,13 @@ This document is not endorsed by the ABCUSD. This section of the repository is a
 ## License
 
 The ABC Unified School District and Its Future © 2021 by The Standard System is licensed under Attribution-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+
+## Inbox
+
+the willingness for a student to file a complaint depends on the chance of retaliation and how likely they're believed
+
+the gaslighting of the student body
+
+the right to record is an extension of the first amendment
+
+so you're stuck, because if they knows who's recorded her, she knows who to retaliate against.
