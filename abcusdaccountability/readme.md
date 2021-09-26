@@ -27,13 +27,9 @@ L
 
 ### Truancy Enforcement
 
-> "As we all know, racism ended in 1990 and everything that happened after that is the minorities' fault."
+> "As we all know, the American public education system ceased to be an engine of ethnic cleansing in 1956 and any attempts to skip school afterwards is bad."
 
--*Conservatives, (probably)*
-
-> "As we all know, the American public education system ceased to be an engine of ethnic cleansing in 1956 and any attempts to skip school afterwards is bad.
-
--*Very Smart People™, (probably)*
+- *Very Smart People™, (probably)*
 	
 We're not arguing that all children don't like attending school, but it is frustrating that very few people in public education seem to acknowledge that there are parts of the student population - neurodivergents, trans people, certain racial minorities - that disproportionately *hate* attending public school.
 
@@ -51,7 +47,7 @@ One might argue "But it's the law! You have to respect the law!" This is an empt
 
 External Readings:
 
-- [Jailed for missing school: the problem with truancy laws](https://reason.com/2015/06/06/jail-for-missed-days-at-school-the-madne/), [backup link](https://web.archive.org/web/20200523062706/https://www.overlawyered.com/2015/06/truancy/)
+- [Jailed for missing school: the problem with truancy laws](https://reason.com/2015/06/06/jail-for-missed-days-at-school-the-madne/), [(backup link)](https://web.archive.org/web/20200523062706/https://www.overlawyered.com/2015/06/truancy/)
 
 ## State-Level Policy
 
