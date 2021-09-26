@@ -31,7 +31,7 @@ L
 
   &mdash; *Some Very Smart People™*
 	
-We're not arguing that all children don't like attending school, but it is frustrating that very few people in public education seem to acknowledge that there are parts of the student population - neurodivergents, trans people, certain racial minorities - that disproportionately *hate* attending public school.
+We're not arguing that all children hate attending school, but it is frustrating that very few people in public education seem to acknowledge that there are parts of the student population - neurodivergents, trans people, certain racial minorities - that disproportionately *hate* attending public school.
 
 For many students, though perhaps not most, what is keeping them from skipping school is the threat of violence. That is, they are aware that if they do not attend an institution of education, the state will force them to do so through punishing the parents, with jail time or fines.
 
@@ -101,7 +101,7 @@ We reiterate three main reasons for this:
 
 **Option Three: Safety In Numbers**
 
-Unless a student's family is financially well-off, it is a most likely a bad idea to go with option 2. Here, we present a third option: Perpetual recording notifications.
+Unless a student's family is financially well-off or has sympathetic friends within the Federalist Society, it is most likely a bad idea to go with option 2. Here, we present a third option: Perpetual recording notifications.
 
 
 
