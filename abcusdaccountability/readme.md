@@ -101,4 +101,4 @@ This document is not endorsed by the ABCUSD. This section of the repository is a
 
 ## License
 
-The ABCUSD and Its Future © 2021 by Standard System is licensed under Attribution-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
+The ABC Unified School District and Its Future © 2021 by The Standard System is licensed under Attribution-ShareAlike 4.0 International. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/
