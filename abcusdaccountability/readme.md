@@ -25,9 +25,27 @@ L
 
 ## Distict-Level Policy
 
+### Truancy Enforcement
+
+> "As we all know, racism ended in 1990 and everything that happened after that is the minorities' fault."
+
+	-*Conservatives, (probably)*
+
+> "As we all know, the American public education system ceased to be an engine of ethnic cleansing in 1956 and any attempts to skip school afterwards is bad.
+
+	-*Very Smart People™, (probably)*
+	
+We're not arguing that all children don't like attending school, but it is frustrating that very few people in public education seem to acknowledge that there are sections of the student population - neurodivergents, trans people, certain racial minorities - that disproportionately *hate* attending public school.
+
+For many students, though perhaps not most, what is keeping them from skipping school is the threat of violence. That is, they are aware that if they do not attend an institution of education, the state will force them to do so through punishing the parents, with jail time or fines.
+
+This is an issue - not all families can afford to pull their child out of public school and put them into private school. Not all families can afford to homeschool them. 
+
 ## State-Level Policy
 
 ## Individual-Level Policy
+
+### Recording
 
 > According to this network "suit," the Nightline producer filed a complaint that said I had directly refused to do a report for his program; in addition, he accused me of laziness (and probably bestiality), but I'd stopped listening. Rising to my full height of six feet four and looming over the veep's desk, I pulled out my recorder and hit the Play button.
 
@@ -40,6 +58,8 @@ L
 - "The Good, Bad, and Completely Ridiculous in American Life", Bill O' Reilly
 
 There's a certain irony in using a quote by a sexual harasser to talk about protecting students from harm. I argue that it's less ironic the more you dig down into it. School is supposed to prepare students for real life, and in real life, you sometimes have to cover your ass. In real life, it's a lot easier if you can prove what you did or didn't do.
+
+To reiterate, this section (and document as a whole) is not advocating for violating human rights, the U.S. Constitution, or any laws that are violating the U.S. constitution.
 
 # Meta
 
