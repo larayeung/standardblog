@@ -80,9 +80,11 @@ Very often, an administrator by the name of $!RS would call students into her of
 Of course, reprimands like "You shouldn't have done this", "You broke this rule", "This person's feelings were hurt" are not verbal abuse. What $!RS has spewed to students is categorically different.
 
 **Option One: Walking Into An Open Fire**
+
 It's difficult for a student to prove exactly what $!RS says behind closed doors. They *do* have an option to say something like, "Before we start this conversation, I want you to know that I am recording this and reserve the right to share this recording with the public." However, we live in a society where students are retaliated against for exercising their rights. It seems reasonable to argue that if $!RS were to know of this, she would retaliate in some other way.
 
 **Option Two: "Lordy, I Hope There Are Tapes"**
+
 There is a second option: not notifying the administrator at all! It is in violation of California's two-party recording laws, but we argue that that policy violates the U.S. Constitution when it's applied to public school grounds.
 
 We go further to argue that if $!RS were to ever attempt to sue a child for exercising their rights on the grounds of California's laws, it would be flouting the principles of truth, justice, and the American way. That is, trying to stop a child from being able to prove what $!RS (or any other administrator) says in that office is un-American.
