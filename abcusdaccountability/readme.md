@@ -75,13 +75,16 @@ There's a certain irony in using a quote by a sexual harasser to talk about prot
 
 To reiterate, this section (and document as a whole) is not advocating for violating human rights, the U.S. Constitution, or any laws that are violating the U.S. constitution.
 
-Very often, an administrator by the name of $!RS would call students into her office and verbally abuse them. It's important to understand the context of the office: students who make the reasonable choice to walk out of that office and ignore that verbal abuse can face repercussions and retaliation.
+Very often, an administrator by the name of $!RS would call students into her office and verbally abuse them as punishment for breaking some rule. It's important to understand the context of the office: students who make the reasonable choice to walk out of that office and ignore that verbal abuse can face repercussions and retaliation.
 
 Of course, reprimands like "You shouldn't have done this", "You broke this rule", "This person's feelings were hurt" are not verbal abuse. What $!RS has spewed to students is categorically different.
 
 It's difficult for a student to prove exactly what $!RS says behind closed doors. They *do* have an option to say something like, "Before we start this conversation, I want you to know that I am recording this and reserve the right to share this recording with the public." However, we live in a society where students are retaliated against for exercising their rights. It seems reasonable to argue that if $!RS were to know of this, she would retaliate in some other way.
 
-Of course, it is in violation of California's two-party recording laws. We argue
+There is a second option: not notifying the administrator at all! It is in violation of California's two-party recording laws, but we argue that that policy violates the U.S. Constitution when it's applied to public school grounds.
+
+We go further to argue that if $!RS were to ever attempt to sue a child for exercising their rights on the grounds of California's laws, it would be flouting the principles of truth, justice, and the American way. That is, trying to stop a child from being able to prove what $!RS (or any other administrator) says in that office is un-American.
+
 
 ## The Constitution
 
