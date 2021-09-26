@@ -29,7 +29,7 @@ L
 
 > "As we all know, the American public education system ceased to be an engine of ethnic cleansing in 1956 and any attempts to skip school afterwards is bad."
 
-  &mdash; *Some Very Smart People™
+  &mdash; *Some Very Smart People™*
 	
 We're not arguing that all children don't like attending school, but it is frustrating that very few people in public education seem to acknowledge that there are parts of the student population - neurodivergents, trans people, certain racial minorities - that disproportionately *hate* attending public school.
 
