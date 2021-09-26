@@ -29,17 +29,29 @@ L
 
 > "As we all know, racism ended in 1990 and everything that happened after that is the minorities' fault."
 
-	-*Conservatives, (probably)*
+-*Conservatives, (probably)*
 
 > "As we all know, the American public education system ceased to be an engine of ethnic cleansing in 1956 and any attempts to skip school afterwards is bad.
 
-	-*Very Smart People™, (probably)*
+-*Very Smart People™, (probably)*
 	
-We're not arguing that all children don't like attending school, but it is frustrating that very few people in public education seem to acknowledge that there are sections of the student population - neurodivergents, trans people, certain racial minorities - that disproportionately *hate* attending public school.
+We're not arguing that all children don't like attending school, but it is frustrating that very few people in public education seem to acknowledge that there are parts of the student population - neurodivergents, trans people, certain racial minorities - that disproportionately *hate* attending public school.
 
 For many students, though perhaps not most, what is keeping them from skipping school is the threat of violence. That is, they are aware that if they do not attend an institution of education, the state will force them to do so through punishing the parents, with jail time or fines.
 
 This is an issue - not all families can afford to pull their child out of public school and put them into private school. Not all families can afford to homeschool them. 
+
+The ABCUSD has very little incentive to acknowledge a student's right to be truant. Schools are paid for attendance. 
+
+The right to engage in truancy is important! Very often, a neurodivergent child can be overwhelmed with bullying or aggressive behavior by a teacher who is too prejudiced to accept their special needs, or is lazy enough to scapegoat the child as the source of all the classroom's disciplinary problems. That trauma can take more than just a week or two to process, and forcing a child to re-attend an institution that doesn't protect neurodivergents is abusive.
+
+People may object that truancy laws are (state-level? federal-level?). Some people may even go as far as to argue that the ABCUSD is a helpless player in this. This seems wrong, for the simple reason that the institution of truancy enforcement requires the cooperation of school districts to *report* truancy data.
+
+One might argue "But it's the law! You have to respect the law!" This is an empty excuse. The willingness for an institution to enforce unjust laws is selective: Marijuana is legal on a state level, in violation of federal law. Many undocumented immigrants are protected by the district, in violation of federal law. Refusing to enforce immigration law and to participate in the war on drugs is a moral good that puts the institution's capital at risk. Despite that, many California institutions still do the right thing.
+
+External Readings:
+
+- [Jailed for missing school: the problem with truancy laws](https://reason.com/2015/06/06/jail-for-missed-days-at-school-the-madne/), [backup link](https://web.archive.org/web/20200523062706/https://www.overlawyered.com/2015/06/truancy/)
 
 ## State-Level Policy
 
