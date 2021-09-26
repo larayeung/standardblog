@@ -1,4 +1,4 @@
-# The ABC Unified School District in Southern California
+# The ABC Unified School District and Its Future
 
 The ABCUSD and its incompetence have been a traumatic disaster for the students of the school district. They have greatly increased the human capital of those of us who have attended this institution of learning, but they have protected abusive employees, have subjected minors to indignities, have led to psychological suffering and have inflicted severe damage on the rights of students.
 
@@ -97,7 +97,7 @@ The ABCUSD has been known to engage in [underhanded and blatantly unethical tact
 
 ## Disclaimer 
 
-this document is not endorsed by the ABCUSD, and this section of the repository is merely an independently-produced handbook for ABCUSD students to protect themselves.
+This document is not endorsed by the ABCUSD. This section of the repository is an independently-produced handbook for ABCUSD students to protect themselves.
 
 ## License
 
