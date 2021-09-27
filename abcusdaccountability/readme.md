@@ -77,7 +77,7 @@ To reiterate, this section (and document as a whole) is not advocating for viola
 
 Very often, an administrator by the name of $!RS would call students into her office and verbally abuse them as punishment for breaking some rule. It's important to understand the context of the office: students who make the reasonable choice to walk out of that office and ignore that verbal abuse can face repercussions and retaliation.
 
-Of course, reprimands like "You shouldn't have done this", "You broke this rule", "This person's feelings were hurt" are not verbal abuse. What $!RS has spewed to students is categorically different.
+Of course, reprimands like "You shouldn't have done this", "You broke this rule", "This person's feelings were hurt" are not verbal abuse. What $!RS has spewed to many students is categorically different.
 
 **Option One: Walking Into An Open Fire**
 
