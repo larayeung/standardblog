@@ -29,7 +29,7 @@ L
 
 ### Truancy Enforcement
 
-> "As we all know, the American public education system ceased to be an engine of ethnic cleansing in 1956 and anything attempts to skip school afterwards is bad."
+> "As we all know, the American public education system ceased to be an engine of ethnic cleansing in 1956 and any attempts to skip school afterwards is bad."
 
   &mdash; *Some Very Smart People™*
 	
