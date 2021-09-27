@@ -134,3 +134,5 @@ the gaslighting of the student body
 the right to record is an extension of the first amendment
 
 so you're stuck, because if they knows who's recorded her, she knows who to retaliate against.
+
+the scenario of walking into the board and presenting the misconduct
