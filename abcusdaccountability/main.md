@@ -4,6 +4,8 @@ The ABCUSD and its incompetence have been a traumatic disaster for the students 
 
 ## About This Document
 
+This document can be divided into two broad sections: individual policy and district policy.
+
 A significant portion of these proposed policies are about helping students to:
 
 1. *Prove* misconduct within this district
