@@ -1,6 +1,6 @@
 # The ABC Unified School District and Its Future
 
-The ABCUSD and its incompetence have been a traumatic disaster for the students of the school district. They have greatly increased the human capital of those of us who have attended this institution of learning, but they have protected abusive employees, have subjected minors to indignities, have led to psychological suffering and have inflicted severe damage on the rights of students.
+The ABC Unified School District in Southern California is in need of reform. They have greatly increased the human capital of those of us who have attended this institution of learning, but they have protected abusive employees, have subjected minors to indignities, have led to psychological suffering and have inflicted severe damage on the rights of students.
 
 ## About This Document
 
