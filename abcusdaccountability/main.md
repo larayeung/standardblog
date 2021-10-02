@@ -1,6 +1,6 @@
 # The ABC Unified School District and Its Future
 
-The ABC Unified School District in Southern California is in need of reform. They have greatly increased the human capital of those of us who have attended this institution of learning, but they have protected abusive employees, allowed for the implementation of reactionary, illiberal policy, have led to academic suffering and have inflicted severe damage on the rights of students.
+The ABC Unified School District in Southern California is in need of reform. They have greatly increased the human capital of those of us who have attended this institution of learning, but they have protected abusive employees, allowed for the implementation of reactionary, illiberal policy, have led to CPTSD and have inflicted severe damage on the rights of students.
 
 ## About This Document
 
