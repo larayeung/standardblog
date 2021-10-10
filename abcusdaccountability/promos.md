@@ -6,3 +6,7 @@ $!RZ
 $!BG
 $!PE
 $!JL
+
+the ABCUSD and its future
+
+how to protect yourself from administrators
