@@ -136,6 +136,13 @@ We reiterate three main reasons for this:
 
 Unless a student's family is financially well-off or has sympathetic friends within the Federalist Society, it is most likely a bad idea to go with option two. It will take years, if not decades, for the Supreme Court to recognize the legitimacy of the [case laid out for recordings on public school grounds.](constitution.md)
 
+To be successful with option two, a student needs two things:
+
+1. A supportive family who believes in the legitimacy of Option Two
+2. A source of money
+
+Why is money a factor? The answer is that the court system benefits people who have money. Pursuing Option Two without having funds can result in that student becoming another casualty of class warfare, and a victim of ABCUSD employees (see $RZ) who believe that their right to comfort trumps a student's right to record.
+
 
 ### Option Three: Safety In Numbers
 

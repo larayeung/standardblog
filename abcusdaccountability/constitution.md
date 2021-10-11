@@ -8,3 +8,7 @@ When applied to school grounds, California's two-party recording laws are uncons
 
 
 the right to record is an extension of the first amendment
+
+### Suspect Classes
+
+When we say "suspect classes" in this document, we don't mean "people who deserve to be treated badly." We mean "groups (classes) of people who have been historically been treated badly by the government's agents." This isn't something we're making up out of thin air - it just happens to be the phrase that the Supreme Court of the United States has used!
