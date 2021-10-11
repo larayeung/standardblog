@@ -96,9 +96,11 @@ External Readings:
 
 ## Digital Recordings
 
-> According to this network "suit," the Nightline producer filed a complaint that said I had directly refused to do a report for his program; in addition, he accused me of laziness (and probably bestiality), but I'd stopped listening. Rising to my full height of six feet four and looming over the veep's desk, I pulled out my recorder and hit the Play button.
+> [...] the Nightline producer filed a complaint that said I had directly refused to do a report for his program; in addition, he accused me of laziness [...], but I'd stopped listening. 
 
-> The man's mouth dropped open as he listened. I stopped the tape and explained that the whole thing was a setup. Koppel had gone home. 
+> Rising to my full height of six feet four and looming over the veep's desk, I pulled out my recorder and hit the Play button.
+
+> The man's mouth dropped open as he listened. I stopped the tape and explained that the whole thing was a setup. [...]
 
 > "You secretly taped an employee of ABC News?" the vice-president gasped.
 
@@ -106,7 +108,7 @@ External Readings:
 
   &mdash; "The Good, Bad, and Completely Ridiculous in American Life", Bill O' Reilly
 
-School is supposed to prepare students for real life, and in real life, you sometimes have to cover your ass. In real life, it's a lot easier if you can prove what you did or didn't do. In real life, illiberalism and reactionarism is rampant among people with power, and some will weaponize that against people under them.
+School is supposed to prepare students for real life, and in real life, people who have power over you will lie about what you did. In real life, it's a lot easier if you can prove what you did or didn't do. In real life, illiberalism and reactionarism is rampant among people with power, and some will weaponize that against people under them.
 
 To reiterate, this section (and document as a whole) is not advocating for violating human rights, the U.S. Constitution, or any state or federal laws that respect the U.S. constitution.
 
