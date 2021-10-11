@@ -108,7 +108,7 @@ External Readings:
 
   &mdash; "The Good, Bad, and Completely Ridiculous in American Life", Bill O' Reilly
 
-School is supposed to prepare students for real life, and in real life, people who have power over you will lie about what you did. In real life, it's a lot easier if you can prove what you did or didn't do. In real life, illiberalism and reactionarism is rampant among people with power, and some will weaponize that against people under them.
+School is supposed to prepare students for real life, and in real life, many people who have power over you will lie about what you did. In real life, it's a lot easier if you can prove what you did or didn't do. Illiberalism and reactionarism is rampant among people with power, and some will weaponize that against people under them.
 
 To reiterate, this section (and document as a whole) is not advocating for violating human rights, the U.S. Constitution, or any state or federal laws that respect the U.S. constitution.
 
