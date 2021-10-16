@@ -13,9 +13,6 @@ A significant portion of these proposed policies (especially the section on [Rec
 3. *Navigate* the often illegal and unconstitutional policies enforced by bureaucrats
 4. *Identify* abusive tactics used to discourage students from exercising their rights
 
-## Instituional Violence
-
-
 
 ## Religious Freedom
 
@@ -39,15 +36,17 @@ This administrator has a moral and ethical obligation to do this.
 
 ### Minority-Exclusionary Radical Progressivism
 
-Expulsion and suspension is an act of institutional violence, and $!RS threatened Gretchen Whitney students with institutional violence on illegitimate and unconstitutional grounds. What we mean by this is that student who has been expelled or suspended cannot re-enter the premises without being forcibly removed through violence. That is, the threat of physical force is what keeps students away when a suspension is issued, and $!RS wielded this power irresponsibly.
+Expulsion and suspension is an act of institutional violence, and $!RS threatened Gretchen Whitney students with institutional violence on illegitimate and unconstitutional grounds. What we mean by this is that a student who has been expelled or suspended cannot re-enter the premises without being forcibly removed through violence. That is, the threat of physical force is what keeps students away when a suspension is issued, and $!RS wielded this power irresponsibly.
 
 We ask !$RS to put herself in the shoes of her victims: what if the district had unconstitutionally threatened to fire her? She would likely sue back, as she would have the means and resources to do so. The families of the students she hurt likely had less money to fight back, and so we argue that her behavior is even worse because she threatened a weaker group with less ability to file a lawsuit. 
 
 Christian theology has been used by Leal Elementary teachers to criticize the idea of being transgender, plural, and homosexual. It is telling that $!RS's victims were rightfully criticizing the bible's treatment of homosexuals on Facebook. It is telling that $RS banned that discussion.
 
-$!RS may view herself as a hero and a progressive, but the important part of good progressivism is to ask marginalized groups what they *actually* want. No student asked !$RS to ban students from criticizing from social media, only state grounds. She ignored an important step in being a good progressive, and as a result she engaged in behavior that hurt minorities at 
+$!RS may view herself as a hero and a progressive, but the important part of good progressivism is to ask marginalized groups what they *actually* want. No student asked !$RS to ban students from criticizing from social media, only state grounds. She ignored an important step in being a good progressive, and as a result she engaged in behavior that hurt minorities.
 
-### District Policy
+We call on $!RS to renounce her practice of minority-exclusionary radical progressivism.
+
+### District Policy on Freedom of Speech
 
 It is likely that the district will need to take matters into its own hands and explicity state within its rules that 
 
@@ -75,6 +74,10 @@ I don't recall any apology to the class for that behavior, no offer to compensat
 It would be good for Gretchen Whitney High Teachers (and ABCUSD teachers as a whole) to sign this [ethical code of violence simulations.](ethical_simulations_of_violence.pdf) It would also be good to publicly post a signed version of this code of conduct on their own social media to demonstrate support for the superior, more ethical form of instruction.
 
 ## Collective Punishment
+
+Pamela Eidem collectively punished students, and forced the entire class to stay inside on multiple occasions for perceived disrespect. She also was a fan of forcing students to exit the classroom and re-enter when the volume was too high.
+
+
 
 ## Truancy Enforcement
 
