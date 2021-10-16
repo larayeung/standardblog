@@ -77,6 +77,8 @@ It would be good for Gretchen Whitney High Teachers (and ABCUSD teachers as a wh
 
 > "Teachers use collective punishment because they're either too lazy to come up with an alternative method or too overwhelmed to deal with issues appropriately or one on one."
 
+> "How often do we as adults tell our children to not give in to peer pressure? Collective punishment is basically school administrators and teachers trying to use peer pressure to bully or guilt kids into behaving."
+
   &mdash; Andrea Raethka, ["Is collective punishment fair in the classroom?"](https://www.democratandchronicle.com/story/editorial/2014/03/04/fair-in-the-classroom/6033887/)
 
 Pamela Eidem, former second grade teacher at Leal Elementary, collectively punished students, and forced the entire class to stay inside on multiple occasions for perceived disrespect. She also was a fan of forcing students to exit the classroom and re-enter when the volume was too high.
