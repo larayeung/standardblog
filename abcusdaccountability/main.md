@@ -37,6 +37,16 @@ In order to rectify this situation and to undo this chilling effect, this admini
 
 This administrator has a moral and ethical obligation to do this. 
 
+### Minority-Exclusionary Radical Progressivism
+
+Expulsion and suspension is an act of institutional violence, and $!RS threatened Gretchen Whitney students with institutional violence on illegitimate and unconstitutional grounds. What we mean by this is that student who has been expelled or suspended cannot re-enter the premises without being forcibly removed through violence. That is, the threat of physical force is what keeps students away when a suspension is issued, and $!RS wielded this power irresponsibly.
+
+We ask !$RS to put herself in the shoes of her victims: what if the district had unconstitutionally threatened to fire her? She would likely sue back, as she would have the means and resources to do so. The families of the students she hurt likely had less money to fight back, and so we argue that her behavior is even worse because she threatened a weaker group with less ability to file a lawsuit. 
+
+Christian theology has been used by Leal Elementary teachers to criticize the idea of being transgender, plural, and homosexual. It is telling that $!RS's victims were rightfully criticizing the bible's treatment of homosexuals on Facebook. It is telling that $RS banned that discussion.
+
+$!RS may view herself as a hero and a progressive, but the important part of good progressivism is to ask marginalized groups what they *actually* want. No student asked !$RS to ban students from criticizing from social media, only state grounds. She ignored an important step in being a good progressive, and as a result she engaged in behavior that hurt minorities at 
+
 ### District Policy
 
 It is likely that the district will need to take matters into its own hands and explicity state within its rules that 

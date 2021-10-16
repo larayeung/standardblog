@@ -14,4 +14,4 @@ You have a moral and ethical obligation to do this. If you choose not to, you ar
 
 Sincerely,
 
-Standard, former Gretchen Whitney Student
+Standard Duong, former Gretchen Whitney Student
