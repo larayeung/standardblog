@@ -79,7 +79,7 @@ It would be good for Gretchen Whitney High Teachers (and ABCUSD teachers as a wh
 
   &mdash; Andrea Raethka, ["Is collective punishment fair in the classroom?"](https://www.democratandchronicle.com/story/editorial/2014/03/04/fair-in-the-classroom/6033887/)
 
-Pamela Eidem collectively punished students, and forced the entire class to stay inside on multiple occasions for perceived disrespect. She also was a fan of forcing students to exit the classroom and re-enter when the volume was too high.
+Pamela Eidem, former second grade teacher at Leal Elementary, collectively punished students, and forced the entire class to stay inside on multiple occasions for perceived disrespect. She also was a fan of forcing students to exit the classroom and re-enter when the volume was too high.
 
 It would be good for the ABC to ratify the [UN Convention on the Rights of the Child](https://www.unicef.org.uk/what-we-do/un-convention-child-rights/), and to explicitly ban collective punishment in classrooms.
 
